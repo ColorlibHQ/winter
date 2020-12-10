@@ -1,0 +1,1872 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Winter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-07 10:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: inc/winter-functions.php:84
+msgid " Comments"
+msgstr ""
+
+#: inc/hooks/hooks-functions.php:296
+msgid "% Comments"
+msgstr ""
+
+#: inc/support-functions.php:80
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:36
+#, php-format
+msgid "%s quantity"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:21
+msgid "&laquo;"
+msgstr ""
+
+#: inc/wp_bootstrap_pagination.php:22
+msgid "&raquo;"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:399
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-color-picker.php:82
+msgid "(clear)"
+msgstr ""
+
+#: inc/support-functions.php:80
+msgid "(Edit)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:71
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: inc/hooks/hooks-functions.php:296
+msgid "0 Comment"
+msgstr ""
+
+#: inc/winter-functions.php:86 inc/hooks/hooks-functions.php:296
+msgid "1 Comment"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:839
+msgid "404 Page Settings"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:859
+msgid "404 Text #1"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:876
+msgid "404 Text #2"
+msgstr ""
+
+#: inc/support-functions.php:78
+#, php-format
+msgid "<span class=\"comment-author-name\">%s</span> "
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/banner-countdown.php:26
+msgid "[Winter] Banner Countdown"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/banner-video.php:26
+msgid "[Winter] Banner Video"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/blog.php:26
+msgid "[Winter] Blog Section"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/feature-products.php:26
+msgid "[Winter] Feature Products Section"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/instagram.php:26
+msgid "[Winter] Instagram Section"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/our-products.php:26
+msgid "[Winter] Our Products Section"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/product-categories.php:26
+msgid "[Winter] Product Categories"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/shipping.php:26
+msgid "[Winter] Shipping Section"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/slider.php:26
+msgid "[Winter] Slider"
+msgstr ""
+
+#. Name of the template
+#: inc/widgets/about-widget.php:76
+msgid "About"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:674
+msgid "About Blockquote Bottom Title"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:655
+msgid "About Blockquote Content"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:631
+msgid "About Content"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:72
+#: inc/welcome-screen/class-winter-welcome-screen.php:74
+msgid "About Winter"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:565
+msgid "About Page"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:609
+msgid "About Title"
+msgstr ""
+
+#. Widget name will appear in UI
+#: inc/widgets/about-widget.php:24
+msgid "About Widget"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:62
+#: inc/welcome-screen/sections/recommended-plugins.php:32
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:283
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:349
+msgid "Activate"
+msgstr ""
+
+#. %s is the plugin name
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-notify-system.php:127
+#, php-format
+msgid "Activate: %s"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-notify-system.php:143
+msgid "Activate: Widget Importer Exporter Plugin"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-notify-system.php:157
+msgid "Activate: WordPress Importer"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/class-epsilon-framework.php:260
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-repeater.php:101
+msgid "Add"
+msgstr ""
+
+#: inc/wp_bootstrap_navwalker.php:204 inc/wp_bootstrap_navwalker.php:408
+msgid "Add a menu"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:359
+msgid "Add a Section"
+msgstr ""
+
+#: inc/widgets/about-widget.php:27
+msgid "Add footer About Content"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:101
+msgid "Add to Menu"
+msgstr ""
+
+#: woocommerce/single-product/tabs/additional-information.php:25
+msgid "Additional information"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:37
+#: inc/winter-framework/customizer/customizer.php:178
+#: inc/winter-framework/customizer/customizer.php:458
+#: inc/winter-framework/customizer/customizer.php:516
+#: inc/winter-framework/customizer/customizer.php:569
+#: inc/winter-framework/customizer/customizer.php:689
+#: inc/winter-framework/customizer/customizer.php:843
+#: inc/winter-framework/customizer/customizer.php:891
+msgid "Allows you to customize settings for Winter theme."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:379
+msgid "Allows you to customize settings for this theme."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:705
+msgid "Api Key"
+msgstr ""
+
+#: woocommerce/cart/cart.php:134
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:76
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:44
+msgid "Awaiting product image"
+msgstr ""
+
+#: templates/content-none.php:30
+msgid "Back to home page"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:334
+msgid "Background color"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:348
+msgid "Background color opacity"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:491 inc/widgets/banner-video.php:152
+msgid "Background Image"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:365
+msgid "Background image"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:438
+msgid "Background parallax"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:380
+msgid "Background position"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:403
+msgid "Background repeat"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:421
+msgid "Background size"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:450
+msgid "Background video"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:41
+msgid "Best security plugins"
+msgstr ""
+
+#: inc/widgets/our-products.php:67
+msgid "Best Seller"
+msgstr ""
+
+#: templates/header-bottom.php:17
+#: inc/winter-framework/customizer/customizer.php:454
+msgid "Blog"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:393
+msgid "Bottom"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:392
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:394
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/widgets/banner-video.php:144
+msgid "Button Text:"
+msgstr ""
+
+#: inc/widgets/blog.php:89
+msgid "By"
+msgstr ""
+
+#: templates/footer-bottom.php:32
+msgid "by"
+msgstr ""
+
+#: inc/hooks/hooks-functions.php:266
+msgid "By "
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:33
+msgid "Calculate shipping"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:28
+msgid "Cart totals"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:36
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:390
+msgid "Center"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:446 inc/widgets/banner-countdown.php:485
+#: inc/widgets/banner-countdown.php:504 inc/widgets/banner-video.php:165
+#: inc/widgets/product-categories.php:410 inc/widgets/slider.php:434
+#: inc/widgets/slider.php:471 inc/widgets/slider.php:508
+msgid "Change Image"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:52
+msgid "Cheap WordPress hosting"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:22
+msgid "Check recommended actions"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:76
+msgid "City"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/class-epsilon-ajax-controller.php:61
+msgid "Class does not exist"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:44
+msgid "Clear"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:369
+msgid "Clear Results"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:59
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:136
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-doubled.php:56
+msgid "Close"
+msgstr ""
+
+#. Author of the theme
+msgid "Colorlib"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:92
+msgid "Colors"
+msgstr ""
+
+#: comments.php:60
+msgid "Comment..."
+msgstr ""
+
+#: inc/winter-functions.php:90
+msgid "Comments are closed"
+msgstr ""
+
+#: comments.php:45
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:24
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Name of the template
+msgid "Contact"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:826
+msgid "Contact form 7 shortcode"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:804
+msgid "Contact Form Title"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:685
+msgid "Contact Page"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:9
+#: inc/welcome-screen/sections/support.php:14
+msgid "Contact Support"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:428
+msgid "Contain"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:83
+msgid "Content"
+msgstr ""
+
+#: inc/hooks/hooks-functions.php:319
+msgid "Continue Reading"
+msgstr ""
+
+#: templates/footer-bottom.php:30
+#, php-format
+msgid "Copyright &copy; %s All rights reserved. | This template is made with"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:406
+msgid "Countdown Section Style:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:134
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:134
+msgid "Coupon:"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:427
+msgid "Cover"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/class-epsilon-customizer.php:479
+msgid "Customize"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:66
+#: inc/welcome-screen/sections/recommended-plugins.php:36
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:291
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:357
+msgid "Deactivate"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:122
+msgid "Default"
+msgstr ""
+
+#: inc/widgets/instagram.php:163
+msgid "Default value 420"
+msgstr ""
+
+#: inc/widgets/instagram.php:158
+msgid "Default value 5"
+msgstr ""
+
+#: woocommerce/single-product/tabs/description.php:25
+msgid "Description"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:19
+msgid "Documentation"
+msgstr ""
+
+#: inc/classes/Class-Config.php:367
+msgid "Download theme sample data"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-layouts.php:201
+msgid "Edit column size"
+msgstr ""
+
+#: templates/404.php:32
+msgid "Either something went wrong or the page dosen&rsquo;t exist anymore."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:50
+msgid "Enter your full address to see shipping costs."
+msgstr ""
+
+#: inc/winter-breadcrumbs.php:109
+msgid "Error 404"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:29
+msgid ""
+"Even if you're a long-time WordPress user, we still believe you should give "
+"our documentation a very quick Read."
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:114
+msgid "Facebook"
+msgstr ""
+
+#. Name of the theme
+msgid "Winter"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Winter is a modern masonry blog WordPress Theme. Its stylish design and "
+"beautiful"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:369
+msgid ""
+"Winter is now installed and ready to use! Get ready to build something "
+"beautiful. We hope you enjoy it! We want to make sure you have the best "
+"experience using Winter and that is why we gathered here all the necessary "
+"information for you. We hope you will enjoy using Winter, as much as we enjoy "
+"creating great products."
+msgstr ""
+
+#: inc/widgets/our-products.php:70
+msgid "Featured"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-typography.php:305
+msgid "Font Size"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:887
+msgid "Footer"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:1067
+msgid "Footer Anchor Color"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:1087
+msgid "Footer Anchor Hover Color"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:1007
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:982
+msgid "Footer Copy Right Text"
+msgstr ""
+
+#: inc/winter-widgets-reg.php:79
+msgid "Footer Five"
+msgstr ""
+
+#: inc/winter-widgets-reg.php:71
+msgid "Footer Four"
+msgstr ""
+
+#: inc/winter-widgets-reg.php:47
+msgid "Footer One"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:937
+msgid "Footer Payment Method"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:1027
+msgid "Footer Text Color"
+msgstr ""
+
+#: inc/winter-widgets-reg.php:63
+msgid "Footer Three"
+msgstr ""
+
+#: inc/winter-widgets-reg.php:55
+msgid "Footer Two"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:912
+msgid "Footer Widget On/Off"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:1047
+msgid "Footer Widget Title Color"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:45
+msgid "Front Page Sections"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:32
+msgid "Full documentation"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:33
+msgid "General"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:101
+msgid "Get started with Winter"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:376
+msgid "Getting Started"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:40
+msgid "Go to Customizer"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:83
+msgid "Go To Top Button"
+msgstr ""
+
+#: templates/404.php:33
+msgid "Go to."
+msgstr ""
+
+#: inc/classes/Class-Config.php:306
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/classes/Class-Config.php:368
+msgid "Head over to our website and download the sample content data."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:108
+msgid "Header Cart Button"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:258
+msgid "Header Promo Link Text ( For header style 2 and 3 )"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:275
+msgid "Header Promo Link Url ( For header style 2 and 3 )"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:241
+msgid "Header Promo Text ( For header style 2 and 3 )"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:203
+msgid "Header Social Show/Hide"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:375
+msgid "Header Style"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:442
+msgid "Header Style 1"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:443
+msgid "Header Style 2"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:444
+msgid "Header Style 3"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:343
+msgid "Header To Background Color"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:365
+msgid "Header To Text Color"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:174
+msgid "Header Top"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:292
+msgid "Header Top Email"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:224
+msgid "Header Top Text ( For header style 1 )"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:294
+msgid "Heading Color"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-image-dimensions.php:92
+msgid "Height"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-doubled.php:64
+msgid "Help"
+msgstr ""
+
+#: inc/winter-breadcrumbs.php:27 inc/winter-breadcrumbs.php:51
+msgid "Home"
+msgstr ""
+
+#. Name of the template
+msgid "Home Page"
+msgstr ""
+
+#: templates/404.php:42
+msgid "Home page"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:119
+#: inc/welcome-screen/sections/actions-required.php:86
+msgid "Hooray! There are no required actions for you right now."
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:503
+msgid "Horizontal alignment"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:31
+msgid "How to speed up wordpress"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://colorlib.com/wp/"
+msgstr ""
+
+#. URI of the theme
+msgid "http://colorlib.com/wp/winter/"
+msgstr ""
+
+#: inc/support-functions.php:171 templates/header-top1.php:78
+#: templates/header-top2.php:37 templates/header-top2.php:123
+#: templates/header-top2.php:178 templates/header-top3.php:21
+#: templates/header-top3.php:99
+msgid "ICON"
+msgstr ""
+
+#: inc/classes/Class-Config.php:383
+msgid ""
+"If you just installed Winter, and are not able to see the front-page demo, "
+"you need to go to Settings -> Reading , Front page displays and select "
+"\"Static Page\"."
+msgstr ""
+
+#: inc/widgets/instagram.php:156
+msgid "Image Limit:"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:590
+msgid "Image Upload"
+msgstr ""
+
+#: inc/widgets/instagram.php:161
+msgid "Image Width:"
+msgstr ""
+
+#: inc/classes/Class-Config.php:376
+msgid "Import Posts"
+msgstr ""
+
+#: inc/classes/Class-Config.php:375
+msgid "Import Sample Data"
+msgstr ""
+
+#: inc/classes/Class-Config.php:377
+msgid "Import Widgets"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:429
+msgid "Initial"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:163
+msgid "Instagram Access Token"
+msgstr ""
+
+#: inc/welcome-screen/sections/actions-required.php:58
+#: inc/welcome-screen/sections/recommended-plugins.php:28
+#: inc/welcome-screen/sections/recommended-plugins.php:43
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:279
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:345
+msgid "Install"
+msgstr ""
+
+#. %s is the plugin name.
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-notify-system.php:121
+#, php-format
+msgid "Install: %s"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-notify-system.php:138
+#: inc/welcome-screen/class-winter-notify-system.php:146
+msgid "Install: Widget Importer Exporter Plugin"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-notify-system.php:152
+#: inc/welcome-screen/class-winter-notify-system.php:160
+msgid "Install: WordPress Importer"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:377
+msgid "Integrations"
+msgstr ""
+
+#: templates/content-none.php:41
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:560
+msgid "Items group"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:546
+msgid "Items spacing"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:87
+msgid "Label"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:318
+msgid "Language Translate Option Show/Hide"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:722
+msgid "Latitude"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:89
+msgid "Layout"
+msgstr ""
+
+#: comments.php:63
+msgid "LEAVE A COMMENT"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:389
+msgid "Left"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-typography.php:323
+msgid "Letter Spacing"
+msgstr ""
+
+#. Section limit
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-repeater.php:290
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:353
+msgid "Limit: "
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-typography.php:314
+msgid "Line Height"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:126
+msgid "Login Url"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:739
+msgid "Longitude"
+msgstr ""
+
+#: inc/widgets/banner-video.php:110
+msgid "Lookbook"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:761
+msgid "Marker Text"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:32
+msgid "N/A"
+msgstr ""
+
+#: inc/widgets/slider.php:282 inc/widgets/slider.php:317
+#: inc/widgets/slider.php:353
+msgid "New arrivals"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:429
+msgid "New Price:"
+msgstr ""
+
+#: templates/pagination.php:20
+msgid "Newer Post"
+msgstr ""
+
+#: inc/winter-functions.php:82
+msgid "No Comments"
+msgstr ""
+
+#: inc/widgets/feature-products.php:85 inc/widgets/our-products.php:105
+#: inc/widgets/our-products.php:136 inc/widgets/our-products.php:174
+#: inc/widgets/our-products.php:204
+msgid "No feature product found"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:439 inc/widgets/banner-countdown.php:478
+#: inc/widgets/banner-countdown.php:497 inc/widgets/banner-video.php:158
+#: inc/widgets/product-categories.php:403 inc/widgets/slider.php:427
+#: inc/widgets/slider.php:464 inc/widgets/slider.php:501
+msgid "No image selected"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:80
+msgid "No products in the cart."
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:18
+msgid "No recommended actions left to perform"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:409
+msgid "No Repeat"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/class-epsilon-ajax-controller.php:37
+#: inc/winter-framework/epsilon-framework/classes/class-epsilon-ajax-controller.php:50
+msgid "Not allowed"
+msgstr ""
+
+#: templates/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/widgets/product-categories.php:377
+msgid "Offer Active:"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:452
+msgid ""
+"Offer Days ( Set how many days continue offer, make sure value should be "
+"number like 20. ):"
+msgstr ""
+
+#: inc/widgets/product-categories.php:385
+msgid "Offer Description:"
+msgstr ""
+
+#: inc/widgets/product-categories.php:397
+msgid "Offer Image"
+msgstr ""
+
+#: inc/widgets/product-categories.php:381
+msgid "Offer Text:"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:425
+msgid "Old Price:"
+msgstr ""
+
+#: templates/pagination.php:21
+msgid "Older Post"
+msgstr ""
+
+#: inc/widgets/blog.php:90
+msgid "on"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:95
+msgid ""
+"Only sections that have an ID are selectable, please edit section id's to "
+"see all the sections!"
+msgstr ""
+
+#: templates/404.php:22
+msgid "Ooops 404 Error !"
+msgstr ""
+
+#: inc/winter-functions.php:140
+msgid "Page"
+msgstr ""
+
+#: inc/winter-widgets-reg.php:28
+msgid "Page Sidebar"
+msgstr ""
+
+#: inc/winter-functions.php:136
+msgid "Pages:"
+msgstr ""
+
+#: inc/widgets/instagram.php:107
+#, php-format
+msgid "Photo by @%s"
+msgstr ""
+
+#: inc/widgets/banner-video.php:116
+msgid "Play Video"
+msgstr ""
+
+#. %s is the plugin name
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-notify-system.php:129
+#, php-format
+msgid "Please activate %s in order to create the demo content."
+msgstr ""
+
+#: inc/welcome-screen/class-winter-notify-system.php:174
+msgid "Please activate the WordPress Importer to create the demo content."
+msgstr ""
+
+#: inc/welcome-screen/class-winter-notify-system.php:188
+msgid ""
+"Please activate the WordPress Widget Importer to create the demo content."
+msgstr ""
+
+#. %s is the plugin name.
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-notify-system.php:123
+#, php-format
+msgid "Please install %s in order to create the demo content."
+msgstr ""
+
+#: inc/welcome-screen/class-winter-notify-system.php:169
+#: inc/welcome-screen/class-winter-notify-system.php:177
+msgid "Please install the WordPress Importer to create the demo content."
+msgstr ""
+
+#: inc/welcome-screen/class-winter-notify-system.php:183
+#: inc/welcome-screen/class-winter-notify-system.php:191
+msgid "Please install the WordPress widget importer to create the demo content"
+msgstr ""
+
+#: comments.php:66
+msgid "Post Comment"
+msgstr ""
+
+#: inc/widgets/blog.php:142 inc/widgets/feature-products.php:123
+#: inc/widgets/our-products.php:244
+msgid "Post Number:"
+msgstr ""
+
+#: inc/hooks/hooks-functions.php:407
+msgid "Post Tags"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:84
+msgid "Postcode / ZIP"
+msgstr ""
+
+#: inc/classes/Class-Config.php:369
+msgid "Posts"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:58
+msgid "Preloader On/Off"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-doubled.php:51
+msgid "Press return or enter to open this section"
+msgstr ""
+
+#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:80
+msgid "Price"
+msgstr ""
+
+#: inc/classes/Class-Config.php:98
+msgid "Primary Menu"
+msgstr ""
+
+#: woocommerce/cart/proceed-to-checkout-button.php:27
+msgid "Proceed to checkout"
+msgstr ""
+
+#: woocommerce/cart/cart.php:34 woocommerce/cart/cart.php:64
+msgid "Product"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:36
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:417
+msgid "Product Title :"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:421
+msgid "Product Url:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:86
+msgid "Quantity"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-image-dimensions.php:96
+msgid "Ratio"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:36
+#: inc/welcome-screen/sections/support.php:47
+#: inc/welcome-screen/sections/support.php:58
+msgid "Read more"
+msgstr ""
+
+#: templates/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:49
+msgid "Recommended"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:378
+msgid "Recommended Actions"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:381
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:313
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:112
+msgid "Recommended resolution:"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:554
+msgid "Related product per section ( Default 4 )"
+msgstr ""
+
+#: woocommerce/single-product/related.php:26
+msgid "Related products"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:444 inc/widgets/banner-countdown.php:483
+#: inc/widgets/banner-countdown.php:502 inc/widgets/banner-video.php:163
+#: inc/widgets/product-categories.php:408 inc/widgets/slider.php:432
+#: inc/widgets/slider.php:469 inc/widgets/slider.php:506
+#: inc/winter-framework/epsilon-framework/class-epsilon-framework.php:259
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:58
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:135
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:321
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:118
+msgid "Remove"
+msgstr ""
+
+#: woocommerce/cart/cart.php:114 woocommerce/cart/mini-cart.php:47
+msgid "Remove this item"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:410
+msgid "Repeat"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:412
+msgid "Repeat X"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:411
+msgid "Repeat Y"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:33
+msgid "Return to shop"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:118
+msgid "Review this theme on w.org"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:391
+msgid "Right"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:945
+#: inc/winter-framework/epsilon-framework/class-epsilon-framework.php:262
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-repeater.php:242
+msgid "Row"
+msgstr ""
+
+#: inc/widgets/our-products.php:73
+msgid "Sale"
+msgstr ""
+
+#: searchform.php:16
+msgid "Search"
+msgstr ""
+
+#: woocommerce/product-searchform.php:26
+msgid "Search for:"
+msgstr ""
+
+#: woocommerce/product-searchform.php:27
+msgid "Search products&hellip;"
+msgstr ""
+
+#: templates/header-bottom.php:19
+msgid "Search Result"
+msgstr ""
+
+#: inc/winter-breadcrumbs.php:107
+msgid "Search results for:"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:365
+msgid "Search sections"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:366
+msgid "Search sections &hellip;"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:72
+msgid "Section"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:189
+msgid "Section Class"
+msgstr ""
+
+#: inc/widgets/blog.php:138 inc/widgets/feature-products.php:119
+#: inc/widgets/instagram.php:152 inc/widgets/our-products.php:240
+msgid "Section Title:"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:376
+msgid "Sections"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-repeater.php:290
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:354
+msgid "sections"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:25
+msgid "See our full documentation"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:267
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-upsell.php:70
+msgid "See what's in the PRO version"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:39
+msgid "Select a country&hellip;"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:78
+msgid "Select a Section"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:59
+msgid "Select a state&hellip;"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:325
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:126
+msgid "Select File"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:440
+msgid "Select global page header style."
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:446 inc/widgets/banner-countdown.php:485
+#: inc/widgets/banner-countdown.php:504 inc/widgets/banner-video.php:165
+#: inc/widgets/product-categories.php:410 inc/widgets/slider.php:434
+#: inc/widgets/slider.php:471 inc/widgets/slider.php:508
+msgid "Select Image"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:394
+msgid "Select page header style 1."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:410
+msgid "Select page header style 2."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:425
+msgid "Select page header style 3."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:495
+msgid "Select the blog sidebar layout."
+msgstr ""
+
+#: inc/classes/Class-Config.php:384
+msgid "Set automatically"
+msgstr ""
+
+#: inc/widgets/product-categories.php:326
+msgid "Set Column #1 Category :"
+msgstr ""
+
+#: inc/widgets/product-categories.php:343
+msgid "Set Column #2 Category :"
+msgstr ""
+
+#: inc/widgets/product-categories.php:360
+msgid "Set Column #3 Category :"
+msgstr ""
+
+#: inc/classes/Class-Config.php:382
+msgid "Set front page to static"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:166
+msgid "Set instagram access token."
+msgstr ""
+
+#: inc/classes/Class-Config.php:384
+msgid "Set manually"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:471
+msgid "Set Post Excerpt"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:55 woocommerce/cart/cart-totals.php:56
+msgid "Shipping"
+msgstr ""
+
+#: inc/widgets/shipping.php:205
+msgid "Shipping #1 Sub Title:"
+msgstr ""
+
+#: inc/widgets/shipping.php:201
+msgid "Shipping #1 Title:"
+msgstr ""
+
+#: inc/widgets/shipping.php:209
+msgid "Shipping #1 Url:"
+msgstr ""
+
+#: inc/widgets/shipping.php:218
+msgid "Shipping #2 Sub Title:"
+msgstr ""
+
+#: inc/widgets/shipping.php:214
+msgid "Shipping #2 Title:"
+msgstr ""
+
+#: inc/widgets/shipping.php:227
+msgid "Shipping #3 Sub Title:"
+msgstr ""
+
+#: inc/widgets/shipping.php:223
+msgid "Shipping #3 Title:"
+msgstr ""
+
+#: inc/widgets/slider.php:288 inc/widgets/slider.php:323
+#: inc/widgets/slider.php:359
+msgid "Shop Now"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:537
+msgid "Shop Title Show/Hide"
+msgstr ""
+
+#. %d: total results
+#: woocommerce/loop/result-count.php:31
+#, php-format
+msgid "Showing the single result"
+msgid_plural "Showing all %d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/winter-widgets-reg.php:19
+msgid "Sidebar"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:493
+msgid "Sidebar Layouts"
+msgstr ""
+
+#: inc/widgets/product-categories.php:389
+msgid "Signup Button Text:"
+msgstr ""
+
+#: inc/widgets/product-categories.php:393
+msgid "Signup Button Url:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:32
+msgid "SKU:"
+msgstr ""
+
+#: inc/widgets/slider.php:421
+msgid "Slider #1 Background Image"
+msgstr ""
+
+#: inc/widgets/slider.php:413
+msgid "Slider #1 Button Text:"
+msgstr ""
+
+#: inc/widgets/slider.php:417
+msgid "Slider #1 Button Url:"
+msgstr ""
+
+#: inc/widgets/slider.php:405
+msgid "Slider #1 Text 1:"
+msgstr ""
+
+#: inc/widgets/slider.php:409
+msgid "Slider #1 Text 2:"
+msgstr ""
+
+#: inc/widgets/slider.php:458
+msgid "Slider #2 Background Image"
+msgstr ""
+
+#: inc/widgets/slider.php:450
+msgid "Slider #2 Button Text:"
+msgstr ""
+
+#: inc/widgets/slider.php:454
+msgid "Slider #2 Button Url:"
+msgstr ""
+
+#: inc/widgets/slider.php:442
+msgid "Slider #2 Text 1:"
+msgstr ""
+
+#: inc/widgets/slider.php:446
+msgid "Slider #2 Text 2:"
+msgstr ""
+
+#: inc/widgets/slider.php:495
+msgid "Slider #3 Background Image"
+msgstr ""
+
+#: inc/widgets/slider.php:487
+msgid "Slider #3 Button Text:"
+msgstr ""
+
+#: inc/widgets/slider.php:491
+msgid "Slider #3 Button Url:"
+msgstr ""
+
+#: inc/widgets/slider.php:479
+msgid "Slider #3 Text 1:"
+msgstr ""
+
+#: inc/widgets/slider.php:483
+msgid "Slider #3 Text 2:"
+msgstr ""
+
+#: inc/widgets/slider.php:393
+msgid "Slider Style:"
+msgstr ""
+
+#: inc/widgets/slider.php:515
+msgid "Slider text 1 color:"
+msgstr ""
+
+#: inc/widgets/slider.php:519
+msgid "Slider text 2 color:"
+msgstr ""
+
+#: inc/classes/Class-Config.php:99
+msgid "Social Menu"
+msgstr ""
+
+#: templates/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:587
+msgid "Spacing bottom"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:574
+msgid "Spacing top"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:55
+#: woocommerce/cart/shipping-calculator.php:58
+#: woocommerce/cart/shipping-calculator.php:68
+msgid "State / County"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:14
+msgid "Step 1 - Implement recommended actions"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:28
+msgid "Step 2 - Check our documentation"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:37
+msgid "Step 3 - Customize everything"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:532
+msgid "Stretch"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:86
+msgid "Style"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:464
+msgid "Style #2 Left Link Title:"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:468
+msgid "Style #2 Left Link Url:"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:472
+msgid "Style #2 Left Thumbnail Image"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:456
+msgid "Style #2 Left Title One:"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:460
+msgid "Style #2 Left Title Two:"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:409 inc/widgets/slider.php:396
+msgid "Style 1"
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:412 inc/widgets/slider.php:399
+msgid "Style 2"
+msgstr ""
+
+#: woocommerce/product-searchform.php:28
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:33 woocommerce/cart/cart-totals.php:34
+#: woocommerce/cart/mini-cart.php:72
+msgid "Subtotal"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:383
+msgid "Support"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:38
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/welcome-screen/sections/support.php:33
+msgid ""
+"Take a look at why website speed is crucial and ways you can speed up "
+"WordPress so that you can confidently say you hold your own amongst the "
+"billions of web pages!"
+msgstr ""
+
+#: inc/widgets/banner-video.php:136
+msgid "Text 1:"
+msgstr ""
+
+#: inc/widgets/banner-video.php:140
+msgid "Text 2:"
+msgstr ""
+
+#: inc/widgets/about-widget.php:96
+msgid "Text Area:"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:279
+msgid "Text Color"
+msgstr ""
+
+#: inc/widgets/banner-video.php:104
+msgid "The Beauty"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:371
+msgid "The search results will be updated as you type."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:149
+msgid "Theme Color"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-typography.php:272
+msgid "Theme default"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:22
+msgid "Theme options"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:48
+msgid ""
+"There are no shipping methods available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:54
+msgid ""
+"There are so many services offering cheap WordPress hosting out there that "
+"picking a winner can often seem like a game of chance. This article will "
+"hopefully allow you to make an informed decision, catered to your needs"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:43
+msgid ""
+"Thinking that the best WordPress security plugins aren't going to come cheap,"
+" not to mention free? Luckily, that's not the case."
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-color-coded-categories.php:112
+msgid ""
+"This color will affect category related elements such as links, titles, etc. "
+"(defined by your theme)"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:21
+msgid ""
+"This is the place to go to reference different aspects of the theme. Our "
+"online documentation is an incredible resource for learning the ins and outs "
+"of using Winter."
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/backend/class-epsilon-content-backup.php:221
+msgid "This page contains the content created by the customizer."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variable.php:32
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:433
+msgid "Thumbnail Image"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:600
+msgid "Title & description alignment"
+msgstr ""
+
+#: inc/widgets/about-widget.php:91
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/instagram.php:150
+msgid ""
+"To set instagram access token got Appearance -> Customize -> Theme Options ->"
+" General -> Instagram Access Token"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:85
+#: inc/winter-framework/customizer/customizer.php:129
+msgid "Toggle the display of the go to top button."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:110
+msgid "Toggle the display of the header cart button."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:914
+msgid "Toggle the Footer Widget Show or Hide."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:320
+msgid "Toggle the header language translate show."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:205
+msgid "Toggle the header top social active."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:60
+msgid "Toggle the preloader active."
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:539
+msgid "Toggle the shop page title show or hide."
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:387
+msgid "Top"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:386
+msgid "Top Left"
+msgstr ""
+
+#: inc/widgets/blog.php:146
+msgid "Top Padding:"
+msgstr ""
+
+#: inc/widgets/our-products.php:76
+msgid "Top Rate"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:388
+msgid "Top Right"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:92 woocommerce/cart/cart-totals.php:93
+#: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:102
+msgid "Total"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:116
+msgid "Twitter"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:287
+#: inc/winter-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:353
+msgid "Update"
+msgstr ""
+
+#: woocommerce/cart/cart.php:139
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:89
+msgid "Update totals"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:785
+msgid "Upload a marker image"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/class-epsilon-framework.php:261
+#: inc/winter-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:311
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:110
+msgid "Upload image"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:38
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:53
+msgid "Version:"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:518
+msgid "Vertical alignment"
+msgstr ""
+
+#: inc/widgets/banner-video.php:148
+msgid "Video URL:"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:137
+msgid "View Theme Info"
+msgstr ""
+
+#: inc/welcome-screen/sections/support.php:11
+msgid ""
+"We offer excellent support through our advanced ticketing system. Make sure "
+"to register your purchase before contacting support!"
+msgstr ""
+
+#: inc/welcome-screen/sections/getting-started.php:15
+msgid ""
+"We've compiled a list of steps for you, to take make sure the experience "
+"you'll have using one of our products is very easy to follow."
+msgstr ""
+
+#: comments.php:55
+msgid "Website"
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:366
+msgid "Welcome to Winter! - Version "
+msgstr ""
+
+#: inc/welcome-screen/class-winter-welcome-screen.php:99
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing Winter! To fully take advantage of the best "
+"our theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+
+#: inc/widgets/banner-video.php:29
+msgid "Widget to set banner video in home section."
+msgstr ""
+
+#: inc/widgets/blog.php:29
+msgid "Widget to set blog in home section."
+msgstr ""
+
+#: inc/widgets/banner-countdown.php:29
+msgid "Widget to set countdown in home section."
+msgstr ""
+
+#: inc/widgets/feature-products.php:29
+msgid "Widget to set feature products slider in home section."
+msgstr ""
+
+#: inc/widgets/instagram.php:29
+msgid "Widget to set instagram in home section."
+msgstr ""
+
+#: inc/widgets/our-products.php:29
+msgid "Widget to set our products in home section."
+msgstr ""
+
+#: inc/widgets/product-categories.php:29
+msgid "Widget to set product categories in home section."
+msgstr ""
+
+#: inc/widgets/shipping.php:29
+msgid "Widget to set shipping in home section."
+msgstr ""
+
+#: inc/widgets/slider.php:29
+msgid "Widget to set slider in home section."
+msgstr ""
+
+#: inc/classes/Class-Config.php:370
+msgid "Widgets"
+msgstr ""
+
+#: inc/winter-framework/epsilon-framework/customizer/controls/class-epsilon-control-image-dimensions.php:88
+msgid "Width"
+msgstr ""
+
+#. 1: first result 2: last result 3: total results
+#: woocommerce/loop/result-count.php:36
+#, php-format
+msgctxt "with first and last result"
+msgid "Showing the single result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/widgets/slider.php:270 inc/widgets/slider.php:276
+#: inc/widgets/slider.php:311 inc/widgets/slider.php:347
+msgid "Women Collection 2018"
+msgstr ""
+
+#: inc/winter-widgets-reg.php:37
+msgid "Woo Page Sidebar"
+msgstr ""
+
+#: inc/winter-framework/customizer/customizer.php:512
+msgid "WooCommerce"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:27
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: inc/support-functions.php:82
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: comments.php:54
+msgid "Your Email"
+msgstr ""
+
+#: comments.php:53
+msgid "Your Name"
+msgstr ""
+
+#: inc/welcome-screen/sections/recommended-plugins.php:55
+msgid "|"
+msgstr ""
