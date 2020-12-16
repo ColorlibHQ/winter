@@ -1,77 +1,76 @@
 <?php
-// Block direct access
-if ( ! defined( 'ABSPATH' ) ) {
-	exit( 'Direct script access denied.' );
-}
 /**
- * @Packge     : Winter
- * @Version    : 1.0
- * @Author     : Colorlib
- * @Author URI : http://colorlib.com/wp/
+ * The template for displaying comments
  *
+ * This is the template that displays the area of the page that contains both the current comments
+ * and the comment form.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package winter
  */
 
-
-
+/*
+ * If the current post is protected by a password and
+ * the visitor has not yet entered the password we will
+ * return early without loading the comments.
+ */
 if ( post_password_required() ) {
 	return;
 }
+
 ?>
 
-	<?php if ( have_comments() ) : ?>
-		<div id="comments" class="comment--items content--area"> <!-- Comment Item Start-->
-		<h4 class="m-text25 p-b-14"><?php printf( esc_html( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'winter' ) ), esc_html( number_format_i18n( get_comments_number() ) ) ); ?></h4>
+    <?php if ( have_comments() ) : ?>
+        <div class="comments-area">
+            <h4 class="comment-head"><?php comments_number( ' ', '1 Comment', '% Comments' ); ?></h4>
+            <?php
+            wp_list_comments(
+                array(
+                    'style'      => 'div',
+                    'short_ping' => true,
+                    'avatar_size' => 70,
+                    'type' => 'all',
+                    'callback'	 => 'winter_comment_callback',
+                )
+            );
+            the_comments_pagination(); ?>
+    </div>
+    
+    <?php endif; ?>
 
-		<?php the_comments_navigation(); ?>
-			<ul class="commentlist">
-				<?php
-					wp_list_comments(
-						array(
-							'style'       => 'ul',
-							'short_ping'  => true,
-							'avatar_size' => 70,
-							'callback'    => 'winter_comment_callback',
-						)
-					);
-				?>
-			</ul><!-- .comment-list -->
-		<?php the_comments_navigation(); ?>
-		</div><!-- Comment Item End-->
-	<?php endif; // Check for have_comments(). ?>
+    <?php
+    if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'winter' ); ?></p>
+        <?php
+	endif;
+    ?>
 
-	<?php
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-		?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'winter' ); ?></p>
-	<?php endif; ?>
+<div class="comment-form">
+    <?php if( comments_open() ){ ?>
+        <h4><?php esc_html_e('Leave a reply', 'winter') ?></h4>
+    <?php } ?>
 
-<?php
-	$commenter = wp_get_current_commenter();
-	$req       = get_option( 'require_name_email' );
-	$aria_req  = ( $req ? "required='required'" : '' );
-	$fields    = array(
-		'author' => '<div class="bo12 of-hidden size19 m-b-20"><input class="sizefull s-text7 p-l-18 p-r-18" placeholder="' . esc_attr__( 'Your Name', 'winter' ) . '" type="text" name="author" value="' . esc_attr( $commenter['comment_author'] ) . '" id="cName" ' . $aria_req . '></div>',
-		'email'  => '<div class="bo12 of-hidden size19 m-b-20"><input class="sizefull s-text7 p-l-18 p-r-18" placeholder="' . esc_attr__( 'Your Email', 'winter' ) . '" type="text" name="email"  value="' . esc_attr( $commenter['comment_author_email'] ) . '" id="cEmail" ' . $aria_req . '></div>',
-		'url'    => '<div class="bo12 of-hidden size19 m-b-20"><input class="sizefull s-text7 p-l-18 p-r-18" placeholder="' . esc_attr__( 'Website', 'winter' ) . '" type="text" name="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" id="cWebsite"></div>',
-	);
-
-
-	$args = array(
-		'comment_field'      => '<textarea id="cMessage" class="dis-block s-text7 size18 bo12 p-l-18 p-r-18 p-t-13 m-b-20 m-t-20" name="comment" placeholder="' . esc_attr__( 'Comment...', 'winter' ) . '"></textarea>',
-		'id_form'            => 'contactForm',
-		'class_form'         => '',
-		'title_reply'        => esc_html__( 'LEAVE A COMMENT', 'winter' ),
-		'title_reply_before' => '<h4 class="m-text25 p-b-14">',
-		'title_reply_after'  => '</h4>',
-		'label_submit'       => esc_html__( 'Post Comment', 'winter' ),
-		'class_submit'       => 'flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4',
-		'submit_button'      => '<div class="w-size24"><button type="submit" name="%1$s" id="%2$s" class="%3$s">%4$s</button></div>',
-		'fields'             => $fields,
-
-	);
-
-	comment_form( $args );
-
-	?>
-<!-- .comments-area -->
+    <?php
+    $commenter      = wp_get_current_commenter();
+    $req            = get_option( 'require_name_email' );
+    $aria_req       = ( $req ? " aria-required='true'" : '' );
+    $fields =  array(
+        'author' => '<div class="col-sm-6"><div class="form-group"><input type="text" class="form-control" name="author" id="author" value="'.esc_attr($commenter['comment_author']).'" placeholder="'.esc_attr__('Enter Name', 'winter').'" '.$aria_req.' ></div></div>',
+        'email'	 => '<div class="col-sm-6"><div class="form-group"><input type="email" class="form-control" name="email" id="email" value="'.esc_attr($commenter['comment_author_email']).'" placeholder="'.esc_attr__('Enter email address', 'winter').'" '.$aria_req.'></div></div>',
+        'url'	 => '<div class="col-12"><div class="form-group"><input class="form-control" name="url" id="url" type="url" value="'. esc_attr( $commenter['comment_author_url'] ) .'" placeholder="'. esc_html__( 'Website', 'winter' ) .'"></div></div>'
+    );
+    $comments_args = array(
+        'fields'                => apply_filters( 'comment_form_default_fields', $fields ),
+        'class_form'            => 'form-contact comment_form',
+        'id_form'               => 'commentForm',
+        'submit_button'         => '</div><div class="form-group"><button type="submit" class="button-contactForm btn_3">'.esc_html__('Post Comment', 'winter').' </button></div>',
+        'id_submit'             => 'submit-btn',
+        'title_reply'           => '',
+        'comment_notes_before'  => '',
+        'comment_field'         => '<div class="row"><div class="col-12"><div class="form-group"><textarea class="form-control w-100" name="comment" id="comment" cols="30" rows="9" placeholder="'. esc_html__( 'Write Comment', 'winter' ) .'"></textarea></div></div>',
+        'comment_notes_after'   => '',
+    );
+    comment_form($comments_args);
+    ?>
+</div>

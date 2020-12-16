@@ -7,35 +7,35 @@
  *
  */
 
-get_header();
+// Block direct access
+if( !defined( 'ABSPATH' ) ){
+	exit( 'Direct script access denied.' );
+}
 
-?>
-    <section class="blog_area section_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-                    <div class="blog_left_sidebar">
+//  Call Header
+get_header(); ?>
+<section class="page_section section_padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 page_content">
+				<?php
+				if( have_posts() ){
+					while( have_posts() ){
+						the_post();
+						the_content();
 
-	                    <?php
-	                    if (have_posts()) :
-		                    while (have_posts()) : the_post();
-			                    get_template_part('templates/content', get_post_format());
-		                    endwhile;
-	                    endif;
-
-	                    //Pagination
-	                    winter_blog_pagination();
-	                    ?>
-                    </div>
-                </div>
-	            <?php
-		            get_sidebar();
-	            
-	            ?>
-            </div>
-        </div>
-    </section>
-
-
-<?php
+						wp_link_pages(
+							array(
+								'before' => '<div class="page-links">' . __( 'Pages:', 'winter' ),
+								'after'  => '</div>',
+							)
+						);
+					}
+				} ?>
+			</div>
+		</div>
+	</div>
+</section>
+<?php 	
+// Call Footer
 get_footer();

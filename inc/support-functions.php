@@ -81,8 +81,11 @@ function winter_post_tags() {
 
 }
 
-// winter comment template callback
-function winter_comment_callback( $comment, $args, $depth ) {
+
+/*===================================================
+ Winter Comment Template Callback
+ ====================================================*/
+ function winter_comment_callback( $comment, $args, $depth ) {
 
 	if ( 'div' === $args['style'] ) {
 		$tag       = 'div';
@@ -92,61 +95,50 @@ function winter_comment_callback( $comment, $args, $depth ) {
 		$add_below = 'div-comment';
 	}
 	?>
-	<<?php echo esc_attr( $tag ); ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?> id="comment-<?php comment_ID(); ?>">
+	<<?php echo esc_attr( $tag ); ?> <?php comment_class( ( empty( $args['has_children'] ) ? '' : 'parent').' comment-list' ) ?> id="comment-<?php comment_ID() ?>">
 	<?php if ( 'div' != $args['style'] ) : ?>
-		<div id="div-comment-<?php comment_ID(); ?>" class="comment--item">
+		<div id="div-comment-<?php comment_ID() ?>" class="comment-list">
 	<?php endif; ?>
-		<div class="comment--meta-info">
-			<div class="comment--meta-img comment__avatar">
-				<?php
-				if ( $args['avatar_size'] != 0 ) {
-					echo get_avatar( $comment, $args['avatar_size'] );}
-				?>
-			</div>
-			<div class="comment__info">
-				<cite><?php printf( esc_html__( '<span class="comment-author-name">%s</span> ', 'winter' ), get_comment_author_link() ); ?></cite>
-				<div class="comment__meta">
-					<time class="comment__time"> <?php printf( esc_html__( '%1$s at %2$s', 'winter' ), get_comment_date(), get_comment_time() ); ?><?php edit_comment_link( esc_html__( '(Edit)', 'winter' ), '  ', '' ); ?></time>
-					<?php if ( $comment->comment_approved == '0' ) : ?>
-					 <em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'winter' ); ?></em>
-					  <br />
-					<?php endif; ?>
+		<div class="single-comment">
+			<div class="user d-flex">
+				<div class="thumb">
+					<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+				</div>
+				<div class="desc">
+					<div class="comment">
+						<?php comment_text(); ?>
+					</div>
 
-					<?php
-					comment_reply_link(
-						array_merge(
-							$args,
-							array(
-								'add_below'  => $add_below,
-								'depth'      => 1,
-								'max_depth'  => 5,
-								'reply_text' => 'Reply',
-							)
-						)
-					);
-					?>
+					<div class="d-flex justify-content-between">
+						<div class="d-flex align-items-center">
+							<h5 class="comment_author"><?php printf( __( '<span class="comment-author-name">%s</span> ', 'winter' ), get_comment_author_link() ); ?></h5>
+							<p class="date"><?php printf( __('%1$s at %2$s', 'winter'), get_comment_date(),  get_comment_time() ); ?><?php edit_comment_link( esc_html__( '(Edit)', 'winter' ), '  ', '' ); ?> </p>
+							<?php if ( $comment->comment_approved == '0' ) : ?>
+								<em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'winter' ); ?></em>
+								<br>
+							<?php endif; ?>
+						</div>
+
+						<div class="reply-btn">
+							<?php comment_reply_link(array_merge( $args, array( 'add_below' => $add_below, 'depth' => 1, 'max_depth' => 5, 'reply_text' => 'Reply' ) ) ); ?>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
-		<div class="comment__content">
-
-			<div class="comment__text">
-				<?php comment_text(); ?>
-			</div>
-		</div>
-
 	<?php if ( 'div' != $args['style'] ) : ?>
-	</div>
+		</div>
 	<?php endif; ?>
 	<?php
 }
 // add class comment reply link
-add_filter( 'comment_reply_link', 'winter_replace_reply_link_class' );
+add_filter('comment_reply_link', 'winter_replace_reply_link_class');
 function winter_replace_reply_link_class( $class ) {
-
-	$class = str_replace( "class='comment-reply-link", "class='reply", $class );
+	$class = str_replace("class='comment-reply-link", "class='btn-reply comment-reply-link text-uppercase", $class);
 	return $class;
 }
+
 
 
 // header cart count

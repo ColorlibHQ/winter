@@ -21,29 +21,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( $related_products ) : ?>
-		<div class="sec-title p-b-60">
-			<h3 class="m-text5 t-center">
-				<?php esc_html_e( 'Related products', 'winter' ); ?>
-			</h3>
-		</div>
-			<div class="wrap-slick2">
-				<div class="slick2">
-
-			<?php foreach ( $related_products as $related_product ) : ?>
-
-				<?php
-					$post_object = get_post( $related_product->get_id() );
-
-					setup_postdata( $GLOBALS['post'] =& $post_object );
-
-					wc_get_template_part( 'content', 'product' );
-				?>
-
-			<?php endforeach; ?>
-
+	<div class="row justify-content-center">
+        <div class="col-lg-12">
+          	<div class="section_tittle text-center">
+            	<h2><?php esc_html_e( 'Best Sellers', 'winter' ); ?></h2>
 			</div>
 		</div>
+	</div>
 
+	<div class="row">
+		<?php foreach ( $related_products as $related_product ) : ?>
+			<?php
+				$post_object = get_post( $related_product->get_id() );
+
+				setup_postdata( $GLOBALS['post'] =& $post_object );
+
+				wc_get_template_part( 'content', 'product' );
+			?>
+		<?php endforeach; ?>
 	<?php
 endif;
 

@@ -52,7 +52,7 @@ if ( is_product() ) {
 		</div>
 	</section>
 	<?php if ( is_product() && winter_opt( 'winter-woo-related-product-settings' ) ) : ?>
-	<section class="relateproduct bgwhite p-t-45 p-b-138">
+	<section class="product_list best_seller padding_bottom">
 		<div class="container">
 			<?php woocommerce_output_related_products(); ?>
 		</div>

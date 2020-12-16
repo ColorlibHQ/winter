@@ -31,8 +31,8 @@ if ( ! function_exists( 'winter_footer_before_area' ) ) {
 // Footer area hook function
 if ( ! function_exists( 'winter_footer_area' ) ) {
 	function winter_footer_area() {
-		// $home_style_three = winter_opt( 'winter_select_headerthree_id' );
-		echo '<footer class="footer_part">
+		echo '
+		<footer class="footer_part">
 			<div class="container">';
 				// Footer widget
 				if ( winter_opt( 'winter-widget-toggle-settings', true ) ) {
@@ -41,10 +41,11 @@ if ( ! function_exists( 'winter_footer_area' ) ) {
 					echo '</div>';
 				}
 
-			echo '<div class="row justify-content-center">';
 				// Footer bottom
-				get_template_part( 'templates/footer', 'bottom' );
-			echo '</div>
+				echo '<div class="row justify-content-center">';
+					get_template_part( 'templates/footer', 'bottom' );
+				echo '</div>
+			</div>
 		</footer>';
 	}
 }
@@ -69,7 +70,6 @@ if ( ! function_exists( 'winter_back_to_top' ) ) {
 // Blog, single, page, search, archive pages wrapper start hook function.
 if ( ! function_exists( 'winter_wrp_start_cb' ) ) {
 	function winter_wrp_start_cb() {
-		// if ( winter_is_wc_activated() && ( is_cart() || is_checkout() || is_account_page() ) ) {}
 		$padding = '';
 		if ( ! is_single() ) {
 			if ( is_page() ) {

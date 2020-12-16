@@ -11,11 +11,14 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  */
 ?>
-<div class="pos-relative bo11 of-hidden">
-	<form role="search" class="header__search-form" action="<?php echo esc_url( site_url( '/' ) ); ?>">
-		<input class="s-text7 size16 p-l-23 p-r-50" type="text" name="s" placeholder="<?php esc_html_e( 'Search', 'winter' ); ?>">
-		<button class="flex-c-m size5 ab-r-m color1 color0-hov trans-0-4">
-			<i class="fs-13 fa fa-search" aria-hidden="true"></i>
-		</button>
-	</form>
-</div>
+<form action="<?php echo esc_url( site_url( '/' ) ); ?>">
+	<div class="form-group">
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" name="s" placeholder="<?php esc_html_e( 'Search Keyword', 'winter' ); ?>">
+			<div class="input-group-append">
+				<button type="submit" class="btn" ><i class="ti-search"></i></button>
+			</div>
+		</div>
+	</div>
+	<button class="button rounded-0 primary-bg text-white w-100 btn_1" type="submit"><?php esc_html_e( 'Search', 'winter' ); ?></button>
+</form>

@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						array(
 							'url'   => esc_url( site_url( '/' ) ),
 							'text'  => esc_html__( 'Back to home page', 'winter' ),
-							'class' => 'flex-c-m bg4 size2 bo-rad-23 hov1 m-text3 trans-0-4',
+							'class' => 'button button-contactForm btn_3',
 						)
 					);
 					echo wp_kses_post( $anchor );

@@ -847,9 +847,12 @@ nav.navbar h2 {
 }
 
 .blog_right_sidebar .single_sidebar_widget.widget_aranoz_newsletter .btn, .single_sidebar_widget .tagcloud a:hover{
-    background: #ff3368;
+    background: #2f7dfc;
 }
-
+.single_sidebar_widget.widget_search .btn_1:hover {
+    color: #2f7dfc !important;
+    border-color: #2f7dfc;
+}
 .blog_right_sidebar .single_sidebar_widget.widget_aranoz_newsletter .btn{
     color: #fff;
     padding: 14px 20px;
@@ -1014,6 +1017,8 @@ li.breadcrumb-item a {
     border: none;
     cursor: pointer;
     text-align: right;
+    padding: 8px 25px;
+    border-radius: 23px;
 }
 .woocommerce-cart .wc-proceed-to-checkout {
     float: right;
@@ -1022,7 +1027,7 @@ li.breadcrumb-item a {
     padding: 30px 15px;
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
-.woocommerce-cart .cart-collaterals .cart_totals table tr th {
+.woocommerce-cart .cart-collaterals .cart_totals table tr th, .woocommerce .woocommerce-cart-form table tr th {
     background: none;
 }
 .woocommerce-cart .cart-collaterals .cart_totals tr td {
@@ -1036,6 +1041,45 @@ li.breadcrumb-item a {
 }
 .breadcrumb-item.active::after {
     content: '';
+}
+
+.woocommerce-cart-form .btn_1:hover, .woocommerce-cart .wc-proceed-to-checkout .btn_1:hover {
+    border: 1px solid;
+  }
+  .woocommerce-cart-form .btn_1, .woocommerce-cart .wc-proceed-to-checkout .btn_1 {
+border: 1px solid transparent;
+}
+
+.woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper label, .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper, .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper {
+    width: 100%;
+}
+.woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper input, .woocommerce-additional-fields .woocommerce-additional-fields__field-wrapper textarea {
+    height: 40px;
+    padding: 5px 15px;
+    color: #797979;
+    border-radius: 3px;
+    border-width: 1px;
+}
+.checkout_coupon.woocommerce-form-coupon .form-row-first {
+    width: 52%;
+}
+.checkout_coupon.woocommerce-form-coupon #coupon_code {
+    padding: 8px 25px;
+    height: 47.33px;
+    border: 1px solid #ddd;
+    color: #797979;
+}
+.checkout_coupon.woocommerce-form-coupon .btn_1 {
+    padding: 8px 25px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+.checkout_coupon.woocommerce-form-coupon .btn_1:hover {
+    border: 1px solid;
+}
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    float: none;
+    width: 100%;
 }
 
 /* Contact page style */

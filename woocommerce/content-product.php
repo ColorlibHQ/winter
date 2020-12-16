@@ -27,10 +27,15 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 
+if ( is_product() ) {
+	$single_product_wrapper = 'col-lg-3 col-sm-6';
+} else {
+	$single_product_wrapper = 'col-lg-4 col-sm-6';
+}
 
 ?>
 
-<div class="col-lg-4 col-sm-6">
+<div class="<?php echo esc_attr( $single_product_wrapper )?>">
 	<div <?php wc_product_class( 'single_category_product' ); ?>>
 		<div class="single_category_img">
 			<?php

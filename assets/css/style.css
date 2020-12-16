@@ -1392,7 +1392,7 @@ ul {
 }
 
 /* line 706, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
-.blog_right_sidebar .newsletter_widget .form-control {
+.blog_right_sidebar .newsletter_widget .form-control, .blog_right_sidebar .widget_winter_newsletter .form-control {
   height: 50px;
   border-color: #f0e9ff;
   font-size: 13px;
@@ -1402,24 +1402,27 @@ ul {
 }
 
 /* line 715, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
-.blog_right_sidebar .newsletter_widget .form-control::placeholder {
+.blog_right_sidebar .newsletter_widget .form-control::placeholder, .blog_right_sidebar .widget_winter_newsletter .form-control::placeholder {
   color: #999999;
 }
 
 /* line 719, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
-.blog_right_sidebar .newsletter_widget .form-control:focus {
+.blog_right_sidebar .newsletter_widget .form-control:focus, .blog_right_sidebar .widget_winter_newsletter .form-control:focus {
   border-color: #f0e9ff;
   outline: 0;
   box-shadow: none;
 }
 
 /* line 728, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
-.blog_right_sidebar .newsletter_widget .input-group button {
-  background: #fff;
+.blog_right_sidebar .newsletter_widget .input-group button, .blog_right_sidebar .widget_winter_newsletter .input-group button {
+  background: #2f7dfc;
   border-left: 0;
-  border: 1px solid #f0e9ff;
-  padding: 4px 15px;
+  border: none;
+  padding: 0px 15px;
   border-left: 0;
+  color: #fff;
+  border-radius: 0;
+  font-size: 12px;
 }
 
 /* line 735, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
@@ -1459,14 +1462,14 @@ ul {
 }
 
 /* line 784, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
-.blog_right_sidebar .popular_post_widget .post_item .media-body {
+.blog_right_sidebar .popular_post_widget .post_item .media-body, .blog_right_sidebar .widget_winter_recent_widget .post_item .media-body {
   justify-content: center;
   align-self: center;
   padding-left: 20px;
 }
 
 /* line 789, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
-.blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
+.blog_right_sidebar .popular_post_widget .post_item .media-body h3, .blog_right_sidebar .widget_winter_recent_widget .post_item .media-body h3 {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 6px;
@@ -1479,14 +1482,14 @@ ul {
 }
 
 /* line 806, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
-.blog_right_sidebar .popular_post_widget .post_item .media-body p {
+.blog_right_sidebar .popular_post_widget .post_item .media-body p, .blog_right_sidebar .widget_winter_recent_widget .post_item .media-body p {
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 0px;
 }
 
 /* line 813, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_blog.scss */
-.blog_right_sidebar .popular_post_widget .post_item + .post_item {
+.blog_right_sidebar .popular_post_widget .post_item + .post_item, .blog_right_sidebar .widget_winter_recent_widget .post_item {
   margin-top: 20px;
 }
 
@@ -3423,6 +3426,27 @@ body.single.single-product {
   margin-bottom: 0;
   text-align: left;
 }
+.widget.widget_winter_instagram_photo .single_instgram_photo {
+  float: left;
+  width: 30%;
+  overflow: hidden;
+  margin: 0 15px 15px 0;
+}
+.widget.widget_winter_instagram_photo .single_instgram_photo:nth-child(3n) {
+  margin-right: 0;
+}
+
+.widget.widget_winter_instagram_photo .single_instgram_photo a {
+  display: none;
+}
+
+.widget.widget_winter_instagram_photo {
+  min-height: 350px;
+}
+
+.widget.widget_winter_instagram_photo .single_instgram_photo img {
+  width: 100% !important;
+}
 
 /* End Feature Product Area css
 ============================================================================================ */
@@ -4242,7 +4266,7 @@ body.single.single-product {
 }
 
 /* line 876, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .box_total {
+.product_description_area .tab-content .total_rate .box_total, .product_description_area .woocommerce-Tabs-panel .total_rate .box_total {
   background: #f4f4f4;
   text-align: center;
   padding-top: 20px;
@@ -4251,21 +4275,21 @@ body.single.single-product {
 }
 
 /* line 882, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .box_total h4 {
+.product_description_area .tab-content .total_rate .box_total h4, .product_description_area .woocommerce-Tabs-panel .total_rate .box_total h4 {
   color: #2f7dfc;
   font-size: 48px;
   font-weight: bold;
 }
 
 /* line 888, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .box_total h5 {
+.product_description_area .tab-content .total_rate .box_total h5, .product_description_area .woocommerce-Tabs-panel .total_rate .box_total h5 {
   color: #2a2a2a;
   margin-bottom: 0px;
   font-size: 24px;
 }
 
 /* line 894, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .box_total h6 {
+.product_description_area .tab-content .total_rate .box_total h6, .product_description_area .woocommerce-Tabs-panel .total_rate .box_total h6 {
   color: #2a2a2a;
   margin-bottom: 0px;
   font-size: 14px;
@@ -4274,12 +4298,12 @@ body.single.single-product {
 }
 
 /* line 903, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .rating_list {
+.product_description_area .tab-content .total_rate .rating_list, .product_description_area .woocommerce-Tabs-panel .total_rate .rating_list {
   margin-bottom: 30px;
 }
 
 /* line 906, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .rating_list h3 {
+.product_description_area .tab-content .total_rate .rating_list h3, .product_description_area .woocommerce-Tabs-panel .total_rate .rating_list h3 {
   font-size: 18px;
   color: #2a2a2a;
   font-family: "Roboto", sans-serif;
@@ -4288,28 +4312,28 @@ body.single.single-product {
 }
 
 /* line 916, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .rating_list .list li a {
+.product_description_area .tab-content .total_rate .rating_list .list li a, .product_description_area .woocommerce-Tabs-panel .total_rate .rating_list .list li {
   font-size: 14px;
   color: #797979;
 }
 
 /* line 920, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .rating_list .list li a i {
+.product_description_area .tab-content .total_rate .rating_list .list li a i, .product_description_area .woocommerce-Tabs-panel .total_rate .rating_list .list li i {
   color: #fbd600;
 }
 
 /* line 928, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .total_rate .rating_list .list li:nth-child a i:last-child {
+.product_description_area .tab-content .total_rate .rating_list .list li:nth-child a i:last-child, .product_description_area .woocommerce-Tabs-panel .total_rate .rating_list .list li i:last-child {
   color: #eeeeee;
 }
 
 /* line 939, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .table {
+.product_description_area .tab-content .table, .product_description_area .woocommerce-Tabs-panel .table {
   margin-bottom: 0px;
 }
 
 /* line 944, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .table tbody tr td {
+.product_description_area .tab-content .table tbody tr td, .product_description_area .woocommerce-Tabs-panel .table tbody tr td {
   padding-left: 65px;
   padding-right: 65px;
   padding-top: 14px;
@@ -4317,7 +4341,7 @@ body.single.single-product {
 }
 
 /* line 950, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .table tbody tr td h5 {
+.product_description_area .tab-content .table tbody tr td h5, .product_description_area .woocommerce-Tabs-panel .table tbody tr td h5 {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
@@ -4327,7 +4351,7 @@ body.single.single-product {
 }
 
 /* line 961, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.product_description_area .tab-content .table tbody tr:first-child td {
+.product_description_area .tab-content .table tbody tr:first-child td, .product_description_area .woocommerce-Tabs-panel .table tbody tr:first-child td {
   border-top: 0px;
 }
 
@@ -4357,6 +4381,9 @@ body.single.single-product {
 }
 
 /* line 991, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
+.review_item .media img.avatar {
+  border-radius: 50%
+}
 .review_item .media .media-body {
   vertical-align: middle;
   align-self: center;
@@ -4372,7 +4399,7 @@ body.single.single-product {
 }
 
 /* line 1003, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.review_item .media .media-body i {
+.review_item .media .media-body i, .review_item .media .media-body .star span.fa {
   color: #fbd600;
 }
 
@@ -4422,6 +4449,20 @@ body.single.single-product {
   color: #2a2a2a;
   margin-bottom: 20px;
   font-weight: 700;
+  padding: 0 15px;
+}
+
+.review_box .comment-form-rating .nice-select {
+  display: none;
+}
+
+.review_box .stars {
+  line-height: 13px;
+  padding-left: 10px;
+}
+
+.review_box .stars a {
+  color: #fbd600;
 }
 
 /* line 1053, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
@@ -5064,7 +5105,7 @@ body.single.single-product {
 }
 
 /* line 1596, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_product.scss */
-.billing_details h3 {
+.billing_details h3, .woocommerce-billing-fields h3 {
   font-size: 18px;
   color: #2a2a2a;
   padding-bottom: 10px;
@@ -8253,13 +8294,14 @@ h6 {
   margin-top: 20px;
 }
 
-.footer_part .single_footer_part.widget_winter_newsletter_widget form {
+.footer_part .single_footer_part.widget_winter_newsletter form {
   position: relative;
+  display: block;
 }
 
 /* line 98, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
-.footer_part .single_footer_part .mail_part input, .footer_part .single_footer_part.widget_winter_newsletter_widget form input {
-  padding: 14px 110px 14px 14px;
+.footer_part .single_footer_part .mail_part input, .footer_part .single_footer_part.widget_winter_newsletter form input {
+  padding: 14px 118px 14px 14px;
   font-size: 13px;
   border-radius: 0;
   border: 1px solid #2f7dfc;
@@ -8267,10 +8309,16 @@ h6 {
   background-color: transparent;
   color: #fff;
   position: relative;
+  height: 50px;
+}
+
+.single-post .blog_details .posts--cat {
+  display: inline-block;
+  margin-right: 15px;
 }
 
 /* line 108, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_footer.scss */
-.footer_part .single_footer_part .mail_part .email_icon, .footer_part .single_footer_part.widget_winter_newsletter_widget form button {
+.footer_part .single_footer_part .mail_part .email_icon, .footer_part .single_footer_part.widget_winter_newsletter form button {
   background-color: #2f7dfc;
   text-align: center;
   color: #fff;
@@ -8279,7 +8327,7 @@ h6 {
   border: 2px solid #2f7dfc;
   text-transform: capitalize;
   padding: 14px 20px;
-  height: 49px;
+  height: 50px;
   position: absolute;
   bottom: 0;
   right: 0;

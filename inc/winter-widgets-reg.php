@@ -19,9 +19,9 @@ function winter_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar', 'winter' ),
 			'id'            => 'winter-post-sidebar',
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'before_widget' => '<div id="%1$s" class="widget single_sidebar_widget %2$s">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h4 class="m-text23 p-b-34">',
+			'before_title'  => '<h4 class="widget_title">',
 			'after_title'   => '</h4>',
 		)
 	);
@@ -73,8 +73,8 @@ function winter_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Footer Four', 'winter' ),
 			'id'            => 'footer-4',
-			'before_widget' => '<div class="col-sm-6 col-lg-4"><div id="%1$s" class="single_footer_part %2$s">',
-			'after_widget'  => '</div></div>',
+			'before_widget' => '<div id="%1$s" class="single_footer_part %2$s">',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h4>',
 			'after_title'   => '</h4>',
 		)

@@ -10,53 +10,45 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @Author URI : http://colorlib.com/wp/
  *
  */
-
-
 ?>
+<div id="f0f">
+	<div class="container">
+		<div class="row">
+			<div class="f0f-content text-center">
+			<div class="f0f-content-inner">
+				<?php 
+				$errorText = esc_html__( 'Ooops 404 Error !', 'winter' );
+				if( winter_opt( 'winter_fof_titleone' ) ){
+					$errorText = winter_opt( 'winter_fof_titleone' );
+				}
+				//
+				echo '<h1 class="h1">'.esc_html( $errorText ).'</h1>';
+				
 
-	<div id="f0f" class="pd--100-0">
-		<div class="container">
-			<div class="row">
-				<div class="f0f--content text-center col-md-12">
-					<div class="inner-fof">
-						<div class="inner-child-fof">
-							<?php
-							$error_text = esc_html__( 'Ooops 404 Error !', 'winter' );
-							if ( winter_opt( 'winter_fof_text_one' ) ) {
-								$error_text = winter_opt( 'winter_fof_text_one' );
-							}
-							//
-							echo '<h1 class="h1 m-b-30">' . esc_html( $error_text ) . '</h1>';
-							//
+				// Wrong text block
 
-							// Wrong text block
-							$wrong_text = wp_kses_post( __( 'Either something went wrong or the page dosen&rsquo;t exist anymore.', 'winter' ) );
-							$goto_text  = esc_html__( 'Go to', 'winter' );
+				$wrongText = wp_kses_post( __( 'Either something went wrong or the page dosen&rsquo;t exist anymore.', 'winter' ) );
 
-							if ( winter_opt( 'winter_fof_text_two' ) ) {
-								$wrong_text = winter_opt( 'winter_fof_text_two' );
-							}
+				if( winter_opt('winter_fof_titletwo') ){
+					$wrongText = winter_opt('winter_fof_titletwo');
+				}
 
-							$anchor = winter_anchor_tag(
-								array(
-									'url'  => esc_url( site_url( '/' ) ),
-									'text' => esc_html__( 'Home page', 'winter' ),
-								)
-							);
+				$anchor = winter_anchor_tag(
+					array(
+						'url' 	 => esc_url( site_url( '/' ) ),
+						'text' 	 => esc_html__( 'Go To Home page', 'winter' ),
+						'class'	 => 'button button-contactForm'
+					)
+				);
 
-							echo winter_paragraph_tag(
-								array(
-									'text' => sprintf( '%s %s %s', esc_html( $wrong_text ), esc_html( $goto_text ), wp_kses_post( $anchor ) ),
-								)
-							);
-
-							// Search Form
-							get_search_form();
-							?>
-						</div>
-					</div>
-				</div>
-
+				echo winter_paragraph_tag(
+					array(
+						'text' 	 => esc_html( $wrongText ).' '.wp_kses_post( $anchor ),
+					)
+				);
+				?>
+			</div>
 			</div>
 		</div>
 	</div>
+</div>

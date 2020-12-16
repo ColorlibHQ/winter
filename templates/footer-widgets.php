@@ -18,7 +18,9 @@ if ( is_active_sidebar( 'footer-3' ) ) {
 
 // Footer widget 4
 if ( is_active_sidebar( 'footer-4' ) ) {
-	dynamic_sidebar( 'footer-4' );
+	echo '<div class="col-sm-6 col-lg-4">';
+		dynamic_sidebar( 'footer-4' );
+	echo '</div>';
 }
 
 ?>

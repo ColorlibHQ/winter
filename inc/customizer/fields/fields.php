@@ -20,7 +20,7 @@ if ( defined( 'WC_PLUGIN_FILE' ) ) {
 		array(
 			'type'        => 'epsilon-toggle',
 			'label'       => esc_html__( 'Header Cart Button', 'winter' ),
-			'transport'   => 'postMessage',
+			'transport'   => 'refresh',
 			'description' => esc_html__( 'Toggle the display of the header cart button.', 'winter' ),
 			'section'     => 'winter_general_options_section',
 			'default'     => false,
@@ -61,67 +61,7 @@ Epsilon_Customizer::add_field(
 		'label'             => esc_html__( 'Theme Main Color.', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_general_options_section',
-		'default'           => '#e65540',
-	)
-);
-
-// Language Translate
-
-if ( defined( 'WEGLOT_VERSION' ) ) {
-
-	Epsilon_Customizer::add_field(
-		'winter-headerTranslate-toggle-settings',
-		array(
-			'type'        => 'epsilon-toggle',
-			'label'       => esc_html__( 'Language Translate On/Off', 'winter' ),
-			'description' => esc_html__( 'Toggle the header language translate show.', 'winter' ),
-			'section'     => 'winter_headertop_options_section',
-			'default'     => true,
-		)
-	);
-}
-// Header Top Background Color Picker
-Epsilon_Customizer::add_field(
-	'winter_header_top_bgColor',
-	array(
-		'type'              => 'epsilon-color-picker',
-		'label'             => esc_html__( 'Header Top Background Color', 'winter' ),
-		'sanitize_callback' => 'sanitize_text_field',
-		'section'           => 'winter_headertop_options_section',
-		'default'           => '#f5f5f5',
-	)
-);
-// Header Top Text Color Picker
-Epsilon_Customizer::add_field(
-	'winter_header_top_textColor',
-	array(
-		'type'              => 'epsilon-color-picker',
-		'label'             => esc_html__( 'Header Top Text Color', 'winter' ),
-		'sanitize_callback' => 'sanitize_text_field',
-		'section'           => 'winter_headertop_options_section',
-		'default'           => '#888888',
-	)
-);
-// Page Header Text Color Picker
-Epsilon_Customizer::add_field(
-	'winter_headertextcolor',
-	array(
-		'type'              => 'epsilon-color-picker',
-		'label'             => esc_html__( 'Header Text Color', 'winter' ),
-		'sanitize_callback' => 'sanitize_text_field',
-		'section'           => 'colors',
-		'default'           => '#fff',
-	)
-);
-// Page Header Background Color Picker
-Epsilon_Customizer::add_field(
-	'winter_headerbgcolor',
-	array(
-		'type'              => 'epsilon-color-picker',
-		'label'             => esc_html__( 'Header Background Color', 'winter' ),
-		'sanitize_callback' => 'sanitize_text_field',
-		'section'           => 'colors',
-		'default'           => '#999',
+		'default'           => '#2f7dfc',
 	)
 );
 
@@ -190,7 +130,6 @@ Epsilon_Customizer::add_field(
  * Blog Section Fields
  ***********************************/
 
-
 // Post excerpt length field
 Epsilon_Customizer::add_field(
 	'winter_post_excerpt',
@@ -203,35 +142,54 @@ Epsilon_Customizer::add_field(
 		'default'           => '30',
 	)
 );
-// Blog sidebar layout field
+
+// Blog meta
 Epsilon_Customizer::add_field(
-	'winter-sidebarlayouts-settings',
+	'winter_blog_meta',
 	array(
-		'type'        => 'epsilon-layouts',
-		'label'       => esc_html__( 'Blog Layout', 'winter' ),
+		'type'        => 'epsilon-toggle',
+		'label'       => esc_html__( 'Display blog meta', 'winter' ),
+		'transport'   => 'refresh',
+		'description' => esc_html__( 'Toggle to display the blog meta.', 'winter' ),
 		'section'     => 'winter_blog_options_section',
-		'description' => esc_html__( 'Select the option to set blog page layout.', 'winter' ),
-		'layouts'     => array(
-			'1' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/one-column.png',
-			'2' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleright.jpg',
-			'3' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleleft.jpg',
-		),
-		'default'     => array(
-			'columnsCount' => 1,
-			'columns'      => array(
-				1 => array(
-					'index' => 1,
-				),
-				2 => array(
-					'index' => 2,
-				),
-				3 => array(
-					'index' => 3,
-				),
-			),
-		),
-		'min_span'    => 4,
-		'fixed'       => true,
+		'default'     => true,
+	)
+);
+
+
+// Single blog options separator
+Epsilon_Customizer::add_field(
+	'winter-single-blog-options-separator',
+	array(
+		'type'    => 'epsilon-separator',
+		'label'   => esc_html__( 'Single blog post settings', 'winter' ),
+		'section' => 'winter_blog_options_section',
+	)
+);
+
+// Blog post like button
+Epsilon_Customizer::add_field(
+	'winter_like_btn',
+	array(
+		'type'        => 'epsilon-toggle',
+		'label'       => esc_html__( 'Post like button', 'winter' ),
+		'transport'   => 'refresh',
+		'description' => esc_html__( 'Toggle to display the blog post like button.', 'winter' ),
+		'section'     => 'winter_blog_options_section',
+		'default'     => true,
+	)
+);
+
+// Blog post share buttons
+Epsilon_Customizer::add_field(
+	'winter_blog_share',
+	array(
+		'type'        => 'epsilon-toggle',
+		'label'       => esc_html__( 'Post share buttons', 'winter' ),
+		'transport'   => 'refresh',
+		'description' => esc_html__( 'Toggle to display the blog post share buttons.', 'winter' ),
+		'section'     => 'winter_blog_options_section',
+		'default'     => true,
 	)
 );
 

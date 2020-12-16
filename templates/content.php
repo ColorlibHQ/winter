@@ -38,17 +38,17 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <h2 class="p_title"><?php the_title(); ?></h2>
             </a>
             <?php
-            $post_exc_limit = !empty( winter_opt( 'winter_excerpt_length' ) ) ? winter_opt( 'winter_excerpt_length' ) : 28;
+            $post_exc_limit = !empty( winter_opt( 'winter_post_excerpt' ) ) ? winter_opt( 'winter_post_excerpt' ) : 30;
             echo wpautop( wp_trim_words( get_the_content(), $post_exc_limit, '' ) );
-
-            // if( winter_opt( 'winter_blog_meta' ) == 1 ) {
+            
+            if( winter_opt( 'winter_blog_meta' ) == 1 ) {
 	            ?>
                 <ul class="blog-info-link">
                     <li><i class="fa fa-tags"></i> <?php echo winter_featured_post_cat(); ?></li>
                     <li><?php echo winter_posted_comments(); ?></li>
                 </ul>
 	            <?php
-            //} ?>
+            } ?>
         </div>
         
     </article>

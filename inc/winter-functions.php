@@ -27,6 +27,164 @@ function winter_opt( $id = null, $default = '' ) {
 }
 
 
+/**================================================
+	Themify Icon
+ =================================================*/
+ function winter_themify_icon(){
+    return[
+        'cap'     => __('Icon Cap', 'winter'),
+        'bag'     => __('Icon Bag', 'winter'),
+        'shirt'   => __('Icon T-shirt', 'winter'),
+        'cafe'    => __('Icon Cafe', 'winter'),
+    ];
+}
+
+
+/*=========================================================
+    Share Button Code
+===========================================================*/
+function winter_social_sharing_buttons( $ulClass = '', $tagLine = '' ) {
+
+	// Get page URL
+	$URL = get_permalink();
+	$Sitetitle = get_bloginfo('name');
+
+	// Get page title
+	$Title = str_replace( ' ', '%20', get_the_title());
+
+	// Construct sharing URL without using any script
+	$twitterURL = 'https://twitter.com/intent/tweet?text='.esc_html( $Title ).'&amp;url='.esc_url( $URL ).'&amp;via='.esc_html( $Sitetitle );
+	$facebookURL= 'https://www.facebook.com/sharer/sharer.php?u='.esc_url( $URL );
+	$linkedin   = 'https://www.linkedin.com/shareArticle?mini=true&url='.esc_url( $URL ).'&title='.esc_html( $Title );
+	$pinterest  = 'http://pinterest.com/pin/create/button/?url='.esc_url( $URL ).'&description='.esc_html( $Title );;
+
+	// Add sharing button at the end of page/page content
+	$content = '';
+	$content  .= '<ul class="'.esc_attr( $ulClass ).'">';
+	$content .= $tagLine;
+	$content .= '<li><a href="' . esc_url( $facebookURL ) . '" target="_blank"><i class="ti-facebook"></i></a></li>';
+	$content .= '<li><a href="' . esc_url( $twitterURL ) . '" target="_blank"><i class="ti-twitter-alt"></i></a></li>';
+	$content .= '<li><a href="' . esc_url( $pinterest ) . '" target="_blank"><i class="ti-pinterest"></i></a></li>';
+	$content .= '<li><a href="' . esc_url( $linkedin ) . '" target="_blank"><i class="ti-linkedin"></i></a></li>';
+	$content .= '</ul>';
+
+	return $content;
+
+}
+
+
+/*=============================================================
+	Blog Single Post Navigation
+=============================================================*/
+if( ! function_exists('winter_blog_single_post_navigation') ) {
+	function winter_blog_single_post_navigation() {
+
+		// Start nav Area
+		if( get_next_post_link() || get_previous_post_link()   ):
+			?>
+			<div class="navigation-area">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+						<?php
+						if( get_next_post_link() ){
+							$nextPost = get_next_post();
+
+							if( has_post_thumbnail() ){
+								?>
+								<div class="thumb">
+									<a href="<?php the_permalink(  absint( $nextPost->ID )  ) ?>">
+										<?php echo get_the_post_thumbnail( absint( $nextPost->ID ), 'winter_np_thumb', array( 'class' => 'img-fluid' ) ) ?>
+									</a>
+								</div>
+								<?php
+							} ?>
+							<div class="arrow">
+								<a href="<?php the_permalink(  absint( $nextPost->ID )  ) ?>">
+									<span class="ti-arrow-left text-white"></span>
+								</a>
+							</div>
+							<div class="detials">
+								<p><?php echo esc_html__( 'Prev Post', 'winter' ); ?></p>
+								<a href="<?php the_permalink(  absint( $nextPost->ID )  ) ?>">
+									<h4><?php echo wp_trim_words( get_the_title( $nextPost->ID ), 4, ' ...' ); ?></h4>
+								</a>
+							</div>
+							<?php
+						} ?>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+						<?php
+						if( get_previous_post_link() ){
+							$prevPost = get_previous_post();
+							?>
+							<div class="detials">
+								<p><?php echo esc_html__( 'Next Post', 'winter' ); ?></p>
+								<a href="<?php the_permalink(  absint( $prevPost->ID )  ) ?>">
+									<h4><?php echo wp_trim_words( get_the_title( $prevPost->ID ), 4, ' ...' ); ?></h4>
+								</a>
+							</div>
+							<div class="arrow">
+								<a href="<?php the_permalink(  absint( $prevPost->ID )  ) ?>">
+									<span class="ti-arrow-right text-white"></span>
+								</a>
+							</div>
+							<div class="thumb">
+								<a href="<?php the_permalink(  absint( $prevPost->ID )  ) ?>">
+									<?php echo get_the_post_thumbnail( absint( $prevPost->ID ), 'winter_np_thumb', array( 'class' => 'img-fluid' ) ) ?>
+								</a>
+							</div>
+							<?php
+						} ?>
+					</div>
+				</div>
+			</div>
+		<?php
+		endif;
+
+	}
+}
+
+
+/*=======================================================
+	Author Bio
+=======================================================*/
+function winter_author_bio(){
+	$avatar = get_avatar( absint( get_the_author_meta( 'ID' ) ), 90 );
+	?>
+	<div class="blog-author">
+		<div class="media align-items-center">
+			<?php
+			if( $avatar  ) {
+				echo wp_kses_post( $avatar );
+			}
+			?>
+			<div class="media-body">
+				<a href="<?php echo esc_url( get_author_posts_url( absint( get_the_author_meta( 'ID' ) ) ) ); ?>"><h4><?php echo esc_html( get_the_author() ); ?></h4></a>
+				<p><?php echo esc_html( get_the_author_meta('description') ); ?></p>
+			</div>
+		</div>
+	</div>
+	<?php
+}
+
+
+/*=========================================================
+	Custom meta id callback
+=========================================================*/
+function winter_meta( $id = '' ){
+    
+    $value = get_post_meta( get_the_ID(), '_winter_'.$id, true );
+    
+    return $value;
+}
+
+function winter_get_page_section_visibility_option( $id = '' ) {
+	$current_page_id = get_queried_object_id();
+	$value           = get_post_meta( $current_page_id, '_winter_'.$id, true );
+
+	return $value;
+}
+
 
 /*============================================================
 	Pagination

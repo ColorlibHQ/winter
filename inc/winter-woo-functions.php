@@ -201,4 +201,55 @@ function winter_loop_shop_per_page( $cols ) {
 	return $cols;
 }
 
+
+/*==============================================
+*  WooCommerce Comments Review Section
+*/
+
+function winter_woocommerce_comments($comment, $args, $depth) {
+	global $product;
+   	$GLOBALS['comment'] = $comment;
+   	extract($args, EXTR_SKIP);
+   	?>
+   	<div id="comment-<?php comment_ID() ?>" class="review_item">
+      <div class="media">
+         <?php 
+         if(get_avatar($comment)) {
+            echo '<div class="d-flex">';
+            echo get_avatar($comment, 70);
+            echo '</div>';
+         } ?>
+
+         <div class="media-body">
+            <h4><?php comment_author(); ?></h4>
+			<?php
+			$starVal = get_comment_meta( $comment->comment_ID, 'rating', true );
+            
+            if (!empty( $starVal )) {
+                  echo '<div class="star">';
+                  for ($i = 1; $i <= 5; $i++) {
+
+                     if ($starVal >= $i) {
+                        echo '<span class="fa fa-star"></span>';
+                     } else {
+                        echo '<span class="fa fa-star-o"></span>';
+                     }
+                  }
+                  echo '</div>';
+			} 
+			
+			// echo '<pre>';
+			// print_r( woocommerce_review_display_rating() );
+			// echo '</pre>';
+			 
+            ?>
+         </div>
+      </div>
+    	<?php woocommerce_review_display_comment_text() ?>
+   </div>
+
+   <?php
+}
+
+
 ?>

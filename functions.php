@@ -79,8 +79,14 @@ add_action( 'admin_enqueue_scripts', 'winter_admin_style' );
  *
  */
 
+
+if( class_exists( 'RW_Meta_Box' ) ){
+	// Metabox Function
+	require_once WINTER_DIR_PATH_INC . 'winter-metabox.php';
+}
 require_once WINTER_DIR_PATH_INC . 'winter-breadcrumbs.php';
 require_once WINTER_DIR_PATH_INC . 'winter-widgets-reg.php';
+require_once WINTER_DIR_PATH_INC . 'post-like.php';
 require_once WINTER_DIR_PATH_INC . 'wp_bootstrap_navwalker.php';
 require_once WINTER_DIR_PATH_INC . 'winter-functions.php';
 require_once WINTER_DIR_PATH_INC . 'winter-commoncss.php';

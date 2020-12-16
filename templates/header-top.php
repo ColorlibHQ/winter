@@ -31,7 +31,7 @@
 					<div class="hearer_icon d-flex">
 						<?php
 							$cart_visibility = winter_opt( 'winter-cart-toggle-settings' );
-							if ( $cart_visibility == false ) {
+							if ( $cart_visibility == true ) {
 								?>
 								<div class="dropdown cart">
 									<?php

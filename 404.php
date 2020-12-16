@@ -12,18 +12,54 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 
 
-//  Call Header
-get_header();
+	//  Call Header
+	get_header(); ?>
 
-/**
- * 404 page
- * @Hook winter_fof
- * @Hooked winter_fof_cb
- *
- */
+		<div id="f0f">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="f0f-content text-center">
+						<div class="f0f-content-inner">
+							<?php 
+							$errorText = esc_html__( 'Ooops 404 Error !', 'winter' );
+							if( winter_opt( 'winter_fof_titleone' ) ){
+								$errorText = winter_opt( 'winter_fof_titleone' );
+							}
+							//
+							echo '<h1 class="h1">'.esc_html( $errorText ).'</h1>';
+							
 
-do_action( 'winter_fof' );
+							// Wrong text block
 
-// Call Footer
-get_footer();
+							$wrongText = wp_kses_post( __( 'Either something went wrong or the page dosen&rsquo;t exist anymore.', 'winter' ) );
 
+							if( winter_opt('winter_fof_titletwo') ){
+								$wrongText = winter_opt('winter_fof_titletwo');
+							}
+
+							$anchor = winter_anchor_tag(
+								array(
+									'url' 	 => esc_url( site_url( '/' ) ),
+									'text' 	 => esc_html__( 'Go To Home page', 'winter' ),
+									'class'	 => 'button button-contactForm btn_3'
+								)
+							);
+
+							echo winter_paragraph_tag(
+								array(
+									'text' 	 => esc_html( $wrongText )
+								)
+							);
+
+							echo wp_kses_post( $anchor );
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<?php
+	 // Call Footer
+	 get_footer();
+?>
