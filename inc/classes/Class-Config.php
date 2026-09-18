@@ -344,26 +344,21 @@ final class Winter {
 
 	// Google Font
 	private function google_font() {
-
 		$font_url = '';
 
+		/*
+		 * The families this theme uses are bundled under
+		 * assets/fonts/google, so nothing is fetched from Google and
+		 * no request leaves the visitor's browser for a third party.
+		 *
+		 * Translators can still turn the fonts off for scripts these
+		 * families do not cover.
+		 */
 		if ( 'off' !== _x( 'on', 'Google font: on or off', 'winter' ) ) {
-
-			$font_families = array(
-				'Roboto+Condensed:300,400,700',
-				'Roboto:300,400,500,700',
-			);
-
-			$family_args = array(
-				'family' => htmlentities( implode( '|', $font_families ) ),
-				'subset' => urlencode( 'latin, latin-text' ),
-			);
-
-			$font_url = add_query_arg( $family_args, '//fonts.googleapis.com/css' );
+			$font_url = get_template_directory_uri() . '/assets/css/google-fonts.css';
 		}
 
 		return esc_url_raw( $font_url );
-
 	} //End google_font method
 
 	/**
