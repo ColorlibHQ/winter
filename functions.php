@@ -117,3 +117,16 @@ $winter = new Winter();
 
 
 
+
+
+/**
+ * Editor and markup support this theme predates.
+ */
+if ( ! function_exists( 'winter_modern_supports' ) ) {
+	function winter_modern_supports() {
+		add_theme_support( 'responsive-embeds' );
+		add_theme_support( 'align-wide' );
+		add_theme_support( 'editor-styles' );
+	}
+	add_action( 'after_setup_theme', 'winter_modern_supports', 20 );
+}
