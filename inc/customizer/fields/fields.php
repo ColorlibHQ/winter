@@ -15,10 +15,10 @@
 
 // Cart button option field
 if ( defined( 'WC_PLUGIN_FILE' ) ) {
-	Epsilon_Customizer::add_field(
+	Colorlib_Customizer::add_field(
 		'winter-cart-toggle-settings',
 		array(
-			'type'        => 'epsilon-toggle',
+			'type'        => 'colorlib-toggle',
 			'label'       => esc_html__( 'Header Cart Button', 'winter' ),
 			'transport'   => 'refresh',
 			'description' => esc_html__( 'Toggle the display of the header cart button.', 'winter' ),
@@ -28,7 +28,7 @@ if ( defined( 'WC_PLUGIN_FILE' ) ) {
 	);
 }
 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_instagram_username',
 	array(
 		'type'              => 'text',
@@ -40,7 +40,7 @@ Epsilon_Customizer::add_field(
 
 	)
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_instagram_photo_limit',
 	array(
 		'type'              => 'number',
@@ -54,10 +54,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Theme Main Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_themecolor',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( 'Theme Main Color.', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_general_options_section',
@@ -71,10 +71,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 //Shipping option add settings
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_shipping_settings',
 	array(
-		'type'         => 'epsilon-repeater',
+		'type'         => 'colorlib-repeater',
 		'section'      => 'winter_shipping_section_settings',
 		'label'        => esc_html__( 'Shipping options', 'winter' ),
 		'button_label' => esc_html__( 'Add new item', 'winter' ),
@@ -107,7 +107,7 @@ Epsilon_Customizer::add_field(
 		'fields'       => [
 			'image' => [
 				'label'   => esc_html__( 'Select Image', 'winter' ),
-				'type'    => 'epsilon-image',
+				'type'    => 'colorlib-image',
 				'default' => WINTER_DIR_ICON_IMG_URI.'truck-icon.png'
 			],
 			'title' => [
@@ -131,7 +131,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_post_excerpt',
 	array(
 		'type'              => 'text',
@@ -144,10 +144,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Blog meta
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_blog_meta',
 	array(
-		'type'        => 'epsilon-toggle',
+		'type'        => 'colorlib-toggle',
 		'label'       => esc_html__( 'Display blog meta', 'winter' ),
 		'transport'   => 'refresh',
 		'description' => esc_html__( 'Toggle to display the blog meta.', 'winter' ),
@@ -158,20 +158,20 @@ Epsilon_Customizer::add_field(
 
 
 // Single blog options separator
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter-single-blog-options-separator',
 	array(
-		'type'    => 'epsilon-separator',
+		'type'    => 'colorlib-separator',
 		'label'   => esc_html__( 'Single blog post settings', 'winter' ),
 		'section' => 'winter_blog_options_section',
 	)
 );
 
 // Blog post like button
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_like_btn',
 	array(
-		'type'        => 'epsilon-toggle',
+		'type'        => 'colorlib-toggle',
 		'label'       => esc_html__( 'Post like button', 'winter' ),
 		'transport'   => 'refresh',
 		'description' => esc_html__( 'Toggle to display the blog post like button.', 'winter' ),
@@ -181,10 +181,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Blog post share buttons
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_blog_share',
 	array(
-		'type'        => 'epsilon-toggle',
+		'type'        => 'colorlib-toggle',
 		'label'       => esc_html__( 'Post share buttons', 'winter' ),
 		'transport'   => 'refresh',
 		'description' => esc_html__( 'Toggle to display the blog post share buttons.', 'winter' ),
@@ -198,20 +198,20 @@ Epsilon_Customizer::add_field(
 ***************************/
 
 // Shop page settings separator
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter-woo-shop-separator',
 	array(
-		'type'    => 'epsilon-separator',
+		'type'    => 'colorlib-separator',
 		'label'   => esc_html__( 'Shop page settings', 'winter' ),
 		'section' => 'winter_woocommerce_options_section',
 	)
 );
 
 // WooCommerce shop title show/hide option field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter-woo-shoppage-title-settings',
 	array(
-		'type'        => 'epsilon-toggle',
+		'type'        => 'colorlib-toggle',
 		'label'       => esc_html__( 'Shop Title Show/Hide', 'winter' ),
 		'description' => esc_html__( 'Toggle the shop page title show or hide.', 'winter' ),
 		'section'     => 'winter_woocommerce_options_section',
@@ -220,10 +220,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Product per page number field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_woo_product_perpage',
 	array(
-		'type'              => 'epsilon-slider',
+		'type'              => 'colorlib-slider',
 		'label'             => esc_html__( 'Shop product per page', 'winter' ),
 		'description'       => esc_html__( 'Set shop product per page ( Default 10 ).', 'winter' ),
 		'section'           => 'winter_woocommerce_options_section',
@@ -237,20 +237,20 @@ Epsilon_Customizer::add_field(
 	)
 );
 // Details page settings separator
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter-woo-details-separator',
 	array(
-		'type'        => 'epsilon-separator',
+		'type'        => 'colorlib-separator',
 		'label'       => esc_html__( 'Product details page settings', 'winter' ),
 		'description' => esc_html__( 'To see setting taking effect click on product to go product details.', 'winter' ),
 		'section'     => 'winter_woocommerce_options_section',
 	)
 );
 // Related Product Show hide
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter-woo-related-product-settings',
 	array(
-		'type'        => 'epsilon-toggle',
+		'type'        => 'colorlib-toggle',
 		'label'       => esc_html__( 'Related Product Show/Hide', 'winter' ),
 		'description' => esc_html__( 'Toggle the related product show or hide in product details page.', 'winter' ),
 		'section'     => 'winter_woocommerce_options_section',
@@ -258,10 +258,10 @@ Epsilon_Customizer::add_field(
 	)
 );
 // Related Product number field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_related_product_number',
 	array(
-		'type'              => 'epsilon-slider',
+		'type'              => 'colorlib-slider',
 		'label'             => esc_html__( 'Related product per section', 'winter' ),
 		'description'       => esc_html__( 'Set single page related product per section ( Default 4 ).', 'winter' ),
 		'section'           => 'winter_woocommerce_options_section',
@@ -280,7 +280,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_fof_text_one',
 	array(
 		'type'              => 'text',
@@ -291,7 +291,7 @@ Epsilon_Customizer::add_field(
 	)
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_fof_text_two',
 	array(
 		'type'              => 'text',
@@ -302,10 +302,10 @@ Epsilon_Customizer::add_field(
 	)
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_fof_textonecolor_settings',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( '404 Text #1 Color', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_fof_options_section',
@@ -313,10 +313,10 @@ Epsilon_Customizer::add_field(
 	)
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_fof_texttwocolor_settings',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( '404 Text #2 Color', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_fof_options_section',
@@ -324,10 +324,10 @@ Epsilon_Customizer::add_field(
 	)
 );
 // 404 background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_fof_bgcolor_settings',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( '404 Page Background Color', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_fof_options_section',
@@ -340,10 +340,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter-widget-toggle-settings',
 	array(
-		'type'        => 'epsilon-toggle',
+		'type'        => 'colorlib-toggle',
 		'label'       => esc_html__( 'Footer Widget On/Off', 'winter' ),
 		'description' => esc_html__( 'Toggle to display footer widgets.', 'winter' ),
 		'section'     => 'winter_footer_options_section',
@@ -352,20 +352,20 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer copy right text add settings
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter-copyright-text-settings',
 	array(
-		'type'    => 'epsilon-text-editor',
+		'type'    => 'colorlib-text-editor',
 		'label'   => esc_html__( 'Footer copyright text', 'winter' ),
 		'section' => 'winter_footer_options_section',
 		'default' => sprintf( __( 'Copyright &copy; %s All rights reserved.', 'winter' ), date( 'Y' ) ),
 	)
 );
 // Footer widget background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_footer_bgColor_settings',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( 'Footer Background Color', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_footer_options_section',
@@ -373,10 +373,10 @@ Epsilon_Customizer::add_field(
 	)
 );
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_footer_color_settings',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( 'Footer Text Color', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_footer_options_section',
@@ -384,10 +384,10 @@ Epsilon_Customizer::add_field(
 	)
 );
 // Footer widget title color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_footer_widgettitlecolor_settings',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( 'Footer Title Color', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_footer_options_section',
@@ -395,10 +395,10 @@ Epsilon_Customizer::add_field(
 	)
 );
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_footer_anchorcolor_settings',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( 'Footer Anchor Color', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_footer_options_section',
@@ -406,10 +406,10 @@ Epsilon_Customizer::add_field(
 	)
 );
 // Footer widget anchor hover Color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'winter_footer_anchorhovcolor_settings',
 	array(
-		'type'              => 'epsilon-color-picker',
+		'type'              => 'colorlib-color-picker',
 		'label'             => esc_html__( 'Footer Anchor Hover Color', 'winter' ),
 		'sanitize_callback' => 'sanitize_text_field',
 		'section'           => 'winter_footer_options_section',
