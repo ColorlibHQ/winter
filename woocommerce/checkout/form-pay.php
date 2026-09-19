@@ -81,7 +81,7 @@ $totals = $order->get_order_item_totals();
 				?>
 			</ul>
 		<?php endif; ?>
-		<div class="form-row">
+		<div class="row">
 			<input type="hidden" name="woocommerce_pay" value="1" />
 
 			<?php wc_get_template( 'checkout/terms.php' ); ?>

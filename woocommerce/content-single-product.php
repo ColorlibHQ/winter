@@ -33,14 +33,14 @@ if ( post_password_required() ) {
 ?>
 
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
-	<div class="row text-left">
+	<div class="row text-start">
 		<div class="col-lg-5">
 			<div class="product_slider_img">
 				<?php
 				$attachment_ids = $product->get_gallery_image_ids();
 				if( is_array( $attachment_ids ) && count( $attachment_ids ) > 0 ){
 				?>
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 					<?php
 						/**
 						 * Hook: woocommerce_before_single_product_summary.

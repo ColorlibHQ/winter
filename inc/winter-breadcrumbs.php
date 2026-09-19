@@ -45,13 +45,13 @@ if ( ! function_exists( 'winter_breadcrumbs' ) ) {
 		// Open the breadcrumbs
 		$html = '<div class="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">';
 		// Add Homepage link (always present)
-		$html .= '<a class="bread-link s-text16 bread-home" href="' . esc_url( get_home_url( '/' ) ) . '" title="' . esc_attr( $args['home_title'] ) . '">' . esc_html__( 'Home', 'winter' ) . ' <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
+		$html .= '<a class="bread-link s-text16 bread-home" href="' . esc_url( get_home_url( '/' ) ) . '" title="' . esc_attr( $args['home_title'] ) . '">' . esc_html__( 'Home', 'winter' ) . ' <i class="fa-solid fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
 		// Post
 		if ( is_singular( 'post' ) ) {
 			$category        = get_the_category();
 			$category_values = array_values( $category );
 			$last_category   = end( $category_values );
-			$cat_parents     = rtrim( get_category_parents( $last_category->term_id, true, '<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>' ), ',' );
+			$cat_parents     = rtrim( get_category_parents( $last_category->term_id, true, '<i class="fa-solid fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>' ), ',' );
 			$cat_parents     = explode( ',', $cat_parents );
 			foreach ( $cat_parents as $parent ) {
 				$html .= wp_kses_post( $parent );
@@ -62,7 +62,7 @@ if ( ! function_exists( 'winter_breadcrumbs' ) ) {
 				$parents = get_post_ancestors( $post->ID );
 				$parents = array_reverse( $parents );
 				foreach ( $parents as $parent ) {
-					$html .= '<a class="bread-parent s-text16 bread-parent-' . esc_attr( $parent ) . '" href="' . esc_url( get_permalink( $parent ) ) . '" title="' . esc_attr( get_the_title( $parent ) ) . '">' . esc_html( get_the_title( $parent ) ) . ' <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
+					$html .= '<a class="bread-parent s-text16 bread-parent-' . esc_attr( $parent ) . '" href="' . esc_url( get_permalink( $parent ) ) . '" title="' . esc_attr( get_the_title( $parent ) ) . '">' . esc_html( get_the_title( $parent ) ) . ' <i class="fa-solid fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
 				}
 			}
 			$html .= '<span class="s-text17" title="' . esc_attr( get_the_title() ) . '"> ' . esc_html( get_the_title() ) . '</span>';
@@ -70,13 +70,13 @@ if ( ! function_exists( 'winter_breadcrumbs' ) ) {
 			$parent_id        = $post->post_parent;
 			$parent_title     = get_the_title( $parent_id );
 			$parent_permalink = esc_url( get_permalink( $parent_id ) );
-			$html            .= '<a class="bread-parent s-text16" href="' . esc_url( $parent_permalink ) . '" title="' . esc_attr( $parent_title ) . '">' . esc_attr( $parent_title ) . ' <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
+			$html            .= '<a class="bread-parent s-text16" href="' . esc_url( $parent_permalink ) . '" title="' . esc_attr( $parent_title ) . '">' . esc_attr( $parent_title ) . ' <i class="fa-solid fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
 			$html            .= '<span class="s-text17" title="' . esc_attr( get_the_title() ) . '"> ' . esc_html( get_the_title() ) . '</span>';
 		} elseif ( is_singular() ) {
 			$post_type         = get_post_type();
 			$post_type_object  = get_post_type_object( $post_type );
 			$post_type_archive = get_post_type_archive_link( $post_type );
-			$html             .= '<a class="bread-cat s-text16 bread-custom-post-type-' . esc_attr( $post_type ) . '" href="' . esc_url( $post_type_archive ) . '" title="' . esc_attr( $post_type_object->labels->name ) . '">' . esc_attr( $post_type_object->labels->name ) . ' <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
+			$html             .= '<a class="bread-cat s-text16 bread-custom-post-type-' . esc_attr( $post_type ) . '" href="' . esc_url( $post_type_archive ) . '" title="' . esc_attr( $post_type_object->labels->name ) . '">' . esc_attr( $post_type_object->labels->name ) . ' <i class="fa-solid fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
 			$html             .= '<span class="s-text17 bread-' . $post->ID . '" title="' . $post->post_title . '">' . $post->post_title . '</span>';
 
 		} elseif ( is_category() ) {
@@ -84,7 +84,7 @@ if ( ! function_exists( 'winter_breadcrumbs' ) ) {
 			if ( $parent !== 0 ) {
 				$parent_category = get_category( $parent );
 				$category_link   = get_category_link( $parent );
-				$html           .= '<a class="bread-parent s-text16 bread-parent-' . esc_attr( $parent_category->slug ) . '" href="' . esc_url( $category_spannk ) . '" title="' . esc_attr( $parent_category->name ) . '">' . esc_attr( $parent_category->name ) . ' <i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
+				$html           .= '<a class="bread-parent s-text16 bread-parent-' . esc_attr( $parent_category->slug ) . '" href="' . esc_url( $category_spannk ) . '" title="' . esc_attr( $parent_category->name ) . '">' . esc_attr( $parent_category->name ) . ' <i class="fa-solid fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i></a>';
 			}
 			$html .= '<span class="s-text17 bread-cat" title="' . $post->ID . '">' . single_cat_title( '', false ) . '</span>';
 		} elseif ( is_tag() ) {

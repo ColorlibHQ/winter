@@ -230,9 +230,9 @@ function winter_woocommerce_comments($comment, $args, $depth) {
                   for ($i = 1; $i <= 5; $i++) {
 
                      if ($starVal >= $i) {
-                        echo '<span class="fa fa-star"></span>';
+                        echo '<span class="fa-solid fa-star"></span>';
                      } else {
-                        echo '<span class="fa fa-star-o"></span>';
+                        echo '<span class="fa-regular fa-star"></span>';
                      }
                   }
                   echo '</div>';

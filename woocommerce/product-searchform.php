@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <form role="search" method="get" class="woocommerce-product-search header__search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<label class="screen-reader-text" for="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>"><?php esc_html_e( 'Search for:', 'winter' ); ?></label>
 	<input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field s-text7 size16 p-l-23 p-r-50" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'winter' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-	<button class="flex-c-m size5 ab-r-m color1 color0-hov trans-0-4" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'winter' ); ?>"><i class="fs-13 fa fa-search" aria-hidden="true"></i></button>
+	<button class="flex-c-m size5 ab-r-m color1 color0-hov trans-0-4" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'winter' ); ?>"><i class="fs-13 fa-solid fa-search" aria-hidden="true"></i></button>
 	<input type="hidden" name="post_type" value="product" />
 </form>
 </div>

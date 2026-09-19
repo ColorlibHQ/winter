@@ -7,8 +7,8 @@
 					<?php
 						echo winter_theme_logo( 'navbar-brand' );
 					?>
-					<button class="navbar-toggler" type="button" data-toggle="collapse"
-						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="menu_icon"><i class="fas fa-bars"></i></span>
 					</button>
@@ -37,11 +37,11 @@
 									<?php
 									if ( is_plugin_active('woocommerce/woocommerce.php') ) {
 										echo '<a class="dropdown-toggle" href="'.esc_url( wc_get_cart_url() ).'" id="navbarDropdown3" role="button"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<span class="winter-head-cart"></span>';
 									} else {
 										echo '<a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<span class="winter-head-cart">0</span>';
 									}
 									?>
