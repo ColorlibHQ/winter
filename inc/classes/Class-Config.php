@@ -240,71 +240,29 @@ final class Winter {
 				array(
 					'handler'    => 'winter-bootstrap-js',
 					'file'       => $js_path . 'bootstrap.min.js',
-					'dependency' => array( 'jquery' ),
+					'dependency' => array(),
 					'version'    => '5.3.8-4',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'winter-jquery-magnific-popup',
-					'file'       => $js_path . 'jquery.magnific-popup.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'winter-swiper-js',
-					'file'       => $js_path . 'swiper.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
 					'in_footer'  => true,
 				),
 				array(
 					'handler'    => 'winter-mixitup-js',
 					'file'       => $js_path . 'mixitup.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'winter-owl-carousel-js',
-					'file'       => $js_path . 'owl.carousel.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'winter-slick-js',
-					'file'       => $js_path . 'slick.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'winter-jquery-ajaxchimp-js',
-					'file'       => $js_path . 'jquery.ajaxchimp.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'winter-jquery-ajaxchimp-js',
-					'file'       => $js_path . 'jquery.ajaxchimp.min.js',
-					'dependency' => array( 'jquery' ),
+					'dependency' => array(),
 					'version'    => '1.0',
 					'in_footer'  => true,
 				),
 				array(
 					'handler'		=> 'winter-ui-js',
-					'file' 			=> $js_path.'colorlib-ui.js',
+					'file' 			=> $js_path . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'colorlib-ui.js' : 'colorlib-ui.min.js' ),
 					'dependency' 	=> array(),
-					'version' 		=> '2.1.1',
+					'version' 		=> '3.0.0',
 					'in_footer' 	=> true
 				),
 				array(
 					'handler'    => 'winter-main',
 					'file'       => $js_path . 'custom.js',
-					'dependency' => array( 'jquery', 'winter-ui-js' ),
-					'version'    => $this->winter_version . '-s1',
+					'dependency' => array( 'winter-ui-js' ),
+					'version'    => $this->winter_version . '-s2',
 					'in_footer'  => true,
 				),
 			),
@@ -398,7 +356,7 @@ final class Winter {
 		$had_elementor = get_option( 'winter_had_elementor' );
 
 		if ( $had_elementor == 'no' && self::check_elementor_preview_page() ) {
-			wp_enqueue_script( 'winter-elementor-notice', WINTER_DIR_JS_URI . 'winter-elementor-notice.js', array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( 'winter-elementor-notice', WINTER_DIR_JS_URI . 'winter-elementor-notice.js', array(), '1.0-s2', true );
 			wp_localize_script(
 				'winter-elementor-notice',
 				'winterElementorNotice',

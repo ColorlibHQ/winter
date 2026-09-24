@@ -10,7 +10,7 @@
 add_action( 'wp_enqueue_scripts', 'winter_sl_enqueue_scripts' );
 function winter_sl_enqueue_scripts() {
 
-	wp_enqueue_script( 'winter-post-likes', WINTER_DIR_JS_URI . 'post-likes.js', array( 'jquery' ), '0.5', false );
+	wp_enqueue_script( 'winter-post-likes', WINTER_DIR_JS_URI . 'post-likes.js', array( 'winter-ui-js' ), '0.5-s2', true );
 
 	wp_localize_script( 'winter-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
