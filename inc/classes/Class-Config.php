@@ -262,7 +262,7 @@ final class Winter {
 					'handler'    => 'winter-main',
 					'file'       => $js_path . 'custom.js',
 					'dependency' => array( 'winter-ui-js' ),
-					'version'    => $this->winter_version . '-s2',
+					'version'    => $this->winter_version . '-s3',
 					'in_footer'  => true,
 				),
 			),

@@ -144,16 +144,22 @@
     }
 
     //------- makeTimer js --------//
-    // Counts down to a fixed date, as it always did.
+    // Counts down to the date in #timer's data-date attribute (anything
+    // Date.parse reads, e.g. "2026-12-31T18:00:00"). Without one it counts to
+    // 30 days from page load (it used to count to a fixed 2019 date and showed
+    // negative numbers). Stops at zero.
     var parts = ['days', 'hours', 'minutes', 'seconds'].map(function (id) {
       return document.getElementById(id);
     });
     if (parts.some(Boolean)) {
-      var endTime = Date.parse(new Date('27 Sep 2019 12:56:00 GMT+01:00')) / 1000;
+      var timerBox = document.getElementById('timer');
+      var endTime = Date.parse(timerBox ? timerBox.getAttribute('data-date') || '' : '');
+      if (isNaN(endTime)) endTime = Date.now() + 30 * 86400000;
+      endTime = Math.floor(endTime / 1000);
       var labels = ['Days', 'Hours', 'Minutes', 'Seconds'];
       var pad = function (n) { return n < 10 ? '0' + n : n; };
-      setInterval(function () {
-        var timeLeft = endTime - Date.parse(new Date()) / 1000;
+      var tick = function () {
+        var timeLeft = Math.max(0, endTime - Math.floor(Date.now() / 1000));
         var days = Math.floor(timeLeft / 86400);
         var hours = Math.floor((timeLeft - days * 86400) / 3600);
         var minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
@@ -161,7 +167,10 @@
         [days, pad(hours), pad(minutes), pad(seconds)].forEach(function (value, i) {
           if (parts[i]) parts[i].innerHTML = '<span>' + labels[i] + '</span>' + value;
         });
-      }, 1000);
+        if (!timeLeft) clearInterval(timerId);
+      };
+      var timerId = setInterval(tick, 1000);
+      tick();
     }
 
     // Quantity steppers: the buttons either side of an .input-number.

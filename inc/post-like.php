@@ -14,6 +14,7 @@ function winter_sl_enqueue_scripts() {
 
 	wp_localize_script( 'winter-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'like'    => esc_html__( 'Like', 'winter' ),
 		'unlike'  => esc_html__( 'Unlike', 'winter' )
 	) );
 }
