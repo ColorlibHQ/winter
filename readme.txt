@@ -1,8 +1,9 @@
 === Winter ===
 Contributors:       colorlib
 Tags:               custom-header, custom-menu, featured-image-header, featured-images, full-width-template, translation-ready
-Requires at least:  5
-Tested up to:       5.5
+Requires PHP: 7.4
+Requires at least: 6.6
+Tested up to: 7.1
 
 == Description ==
 Winter is a clean, simple, responsive and customizable WordPress theme that looks awesome on any device. For a quick launch of a page to showcases your works, your talents and your services, apredefined theme is a wise decision to make. Winter has it all in store for you to easily and effortlessly engineer an appealing page to attract new clients and seal new business deals.
