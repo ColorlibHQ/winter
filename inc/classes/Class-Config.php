@@ -174,7 +174,7 @@ final class Winter {
 					'handler'    => 'winter-bootstrap',
 					'file'       => $css_path . 'bootstrap.min.css',
 					'dependency' => array(),
-					'version'    => '5.3.8-4',
+					'version'    => '5.3.8-5',
 				),
 				array(
 					'handler'    => 'winter-animate',
