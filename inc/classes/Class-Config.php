@@ -192,7 +192,7 @@ final class Winter {
 					'handler'    => 'winter-flaticon-css',
 					'file'       => $css_path . 'flaticon.css',
 					'dependency' => array(),
-					'version'    => '1.0',
+					'version'    => '1.0-s3',
 				),
 				array(
 					'handler'    => 'winter-font-awesome',
@@ -228,7 +228,7 @@ final class Winter {
 					'handler'    => 'winter-css',
 					'file'       => $css_path . 'style.css',
 					'dependency' => array(),
-					'version'    => $this->winter_version,
+					'version'    => $this->winter_version . '-s3',
 				),
 				array(
 					'handler' => 'winter-style',
